@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>專案展示 | 國科會人文沙龍 影音剪輯 - 莊淳翔</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom CSS -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .bg-base { background-color: #FDFBF7; }
+    .text-base-dark { color: #1A1A1A; }
+    .border-base-dark { border-color: #1A1A1A; }
+    
+    /* Instagram 漸層背景 (保留給Footer使用) */
+    .ig-gradient {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+  </style>
+</head>
+<body class="bg-base text-base-dark font-sans min-h-screen relative overflow-x-hidden selection:bg-slate-300 selection:text-black">
+
+  <!-- --- HEADER (置頂導覽列) --- -->
+  <header class="flex flex-col md:flex-row justify-between items-center px-6 py-4 border-b border-base-dark bg-white/95 backdrop-blur-md sticky top-0 z-50 gap-4 md:gap-0">
+    <div class="flex flex-col text-center md:text-left">
+      <h1 class="text-xl font-black tracking-tighter leading-none">莊淳翔 / PORTFOLIO</h1>
+    </div>
+
+    <!-- 常駐導覽列 -->
+    <nav class="flex items-center space-x-6 font-bold text-xs md:text-sm tracking-widest">
+      <a href="index.html" class="flex items-center space-x-1 hover:text-blue-600 transition-colors">
+        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+        <span>返回首頁</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- --- PROJECT HERO SECTION --- -->
+  <section class="relative px-6 py-12 md:py-20 border-b border-base-dark overflow-hidden bg-[#E2E8F0]">
+    <!-- 裝飾用背景點綴 -->
+    <div class="absolute top-20 right-10 w-80 h-80 bg-slate-300 rounded-full mix-blend-multiply filter blur-3xl opacity-50 z-0 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10 items-center">
+      
+      <!-- Left: Project Title & Meta -->
+      <div class="lg:col-span-5 flex flex-col justify-center">
+        <div class="inline-block bg-white px-3 py-1 rounded-full text-xs mb-6 font-bold border border-black w-max shadow-sm">
+          講座錄影與後製剪輯
+        </div>
+        
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-[1.1] mb-6 text-black">
+          國家科學及技術委員會<br/>人文沙龍<br/>
+          <span class="text-2xl md:text-3xl lg:text-4xl text-gray-700 mt-2 block">影音剪輯專案</span>
+        </h1>
+        
+        <p class="text-sm md:text-base leading-relaxed font-bold mb-8 max-w-md text-gray-900 opacity-90">
+          常態性負責人文沙龍講座影音後製，妥善處理多機位畫面切換與講者簡報字卡整合。目前已累積剪輯超過 20 部演講座談影片，處理素材總時長達 40 小時以上。
+        </p>
+
+        <!-- Meta Info -->
+        <div class="grid grid-cols-2 gap-4 border-t-2 border-black pt-6">
+          <div>
+            <div class="text-[10px] text-black font-bold tracking-widest uppercase mb-1 opacity-70">職位</div>
+            <div class="text-sm font-bold">影音剪輯師</div>
+          </div>
+          <div>
+            <div class="text-[10px] text-black font-bold tracking-widest uppercase mb-1 opacity-70">時間</div>
+            <div class="text-sm font-bold">2022.07 - 現在</div>
+          </div>
+          <div class="col-span-2">
+            <div class="text-[10px] text-black font-bold tracking-widest uppercase mb-1 opacity-70">技能</div>
+            <div class="flex flex-wrap gap-2 mt-1">
+              <span class="text-xs bg-black text-white px-2 py-1 rounded font-bold">多機位剪輯</span>
+              <span class="text-xs bg-black text-white px-2 py-1 rounded font-bold">Premiere Pro</span>
+              <span class="text-xs bg-black text-white px-2 py-1 rounded font-bold">DaVinci Resolve</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Main Hero Image -->
+      <div class="lg:col-span-7">
+        <div class="bg-white rounded-2xl border-2 border-black shadow-[8px_8px_0_0_rgba(0,0,0,1)] aspect-[16/9] lg:aspect-[16/9] flex items-center justify-center p-4 relative overflow-hidden transform md:-rotate-2 transition-transform hover:rotate-0 duration-500">
+          
+          <!-- ▼ 圖片展示框 (實線邊框) ▼ -->
+          <div class="w-full h-full border border-black rounded-lg flex flex-col items-center justify-center text-gray-500 font-bold bg-gray-50 text-sm relative overflow-hidden">
+            
+            <img src="img/ntsc_01.jpg" alt="人文沙龍影片截圖" class="absolute inset-0 w-full h-full object-cover z-10">
+
+            <i data-lucide="video" class="w-10 h-10 mb-2 relative z-0"></i>
+            <span class="relative z-0 text-center">[人文沙龍 講座畫面截圖 / <br/> 剪輯工作區 大圖]</span>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- --- PROJECT CONTENT --- -->
+  <section class="py-16 md:py-24 px-6 bg-base">
+    <div class="max-w-6xl mx-auto space-y-20">
+
+      <!-- Section 1: Overview -->
+      <div class="flex flex-col md:flex-row gap-8 items-start">
+        <div class="md:w-1/3 flex flex-col">
+          <div class="flex items-center space-x-2 border-b-2 border-black pb-2 mb-4">
+            <i data-lucide="scissors" class="w-5 h-5 text-slate-600"></i>
+            <h2 class="text-xl font-black tracking-widest">專案介紹</h2>
+          </div>
+        </div>
+        <div class="md:w-2/3">
+          <h3 class="text-2xl font-bold mb-4">傳遞人文與社會科學的知識火花</h3>
+          <p class="text-gray-700 leading-relaxed font-medium mb-4">
+            國科會「人文沙龍」系列講座邀請國內外傑出學者，分享人文及社會科學領域的最新研究成果與趨勢。我的任務是將長達數小時的實體講座，轉化為高品質、適合線上留存與觀看的影音紀錄。
+          </p>
+          <p class="text-gray-700 leading-relaxed font-medium">
+            這項長期的專案不僅考驗剪輯的耐心，更需要具備良好的邏輯梳理能力。在後製過程中，我必須流暢切換主講人、現場觀眾與簡報畫面的多機位視角，同時進行音軌降噪優化，確保學術知識能被清晰、無干擾地傳遞給線上觀眾。
+          </p>
+        </div>
+      </div>
+
+      <!-- Section 2: VIDEO SHOWCASE (2欄5行 = 共 10 個影片) -->
+      <div class="flex flex-col items-start pt-8 border-t border-gray-300">
+        <div class="flex items-center space-x-2 border-b-2 border-black pb-2 mb-8 w-full md:w-auto">
+          <i data-lucide="play-circle" class="w-5 h-5 text-red-600"></i>
+          <h2 class="text-xl font-black tracking-widest">影片展示</h2>
+        </div>
+        
+        <p class="text-gray-700 leading-relaxed font-medium mb-12 max-w-2xl">
+          以下為我經手剪輯的精選人文沙龍系列講座紀錄。點擊影片即可直接在網頁中播放觀看。
+        </p>
+
+        <!-- Video Grid Layout: 2 Columns on Desktop, 1 on Mobile -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12 w-full">
+          
+          <!-- === Row 1 === -->
+          <!-- Video Card 1 -->
+          <div class="group outline-none flex flex-col h-full">
+            <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-4 transition-transform hover:-translate-y-1 h-full flex flex-col">
+              <div class="aspect-video bg-black rounded-lg border border-gray-300 relative overflow-hidden mb-4">
+                <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/t94HtWJRt5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="flex-grow flex flex-col">
+                <span class="text-xs font-bold text-slate-600 mb-2 mt-1">人文沙龍講座紀錄第 104 場</span>
+                <h4 class="text-xl font-bold leading-tight mb-2 group-hover:text-slate-600 transition-colors">「科學林業在臺灣：重探《國家的視角》」洪廣冀教授</h4>
+                <p class="text-sm text-gray-600 mt-auto">這場演講以林業署支持的「科學林業百年展」為核心，將Scott《國家的視角》理論與台灣在地實踐對話，探討國家如何標準化山林及其帶來的社會與生態影響，呈現台灣林業的獨特脈絡。</p>
+              </div>
+            </div>
+          </div>
+          <!-- Video Card 2 -->
+          <div class="group outline-none flex flex-col h-full">
+            <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-4 transition-transform hover:-translate-y-1 h-full flex flex-col">
+              <div class="aspect-video bg-black rounded-lg border border-gray-300 relative overflow-hidden mb-4">
+                <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/eLflxkKYdxY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="flex-grow flex flex-col">
+                <span class="text-xs font-bold text-slate-600 mb-2 mt-1">人文沙龍講座紀錄第 101 場</span>
+                <h4 class="text-xl font-bold leading-tight mb-2 group-hover:text-slate-600 transition-colors">「明代後期金門的外來侵略與防禦系統」陳國棟教授</h4>
+                <p class="text-sm text-gray-600 mt-auto">本講座聚焦明後期金門對抗倭寇與荷蘭人的防禦體系，解析城池、墩臺與官道鋪遞制度，並透過實地走讀，見證海防要塞的歷史現場。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- === Row 2 === -->
+          <!-- Video Card 3 -->
+          <div class="group outline-none flex flex-col h-full">
+            <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-4 transition-transform hover:-translate-y-1 h-full flex flex-col">
+              <div class="aspect-video bg-black rounded-lg border border-gray-300 relative overflow-hidden mb-4">
+                <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/La1wIhk0GTw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="flex-grow flex flex-col">
+                <span class="text-xs font-bold text-slate-600 mb-2 mt-1">人文沙龍講座紀錄第 99 場</span>
+                <h4 class="text-xl font-bold leading-tight mb-2 group-hover:text-slate-600 transition-colors">「清朝皇帝在六堆客家鄉村」李文良教授</h4>
+                <p class="text-sm text-gray-600 mt-auto">講座解析清初客家如何從方志中的「暴力他者」，透過朱一貴事件效忠朝廷，利用「皇帝萬歲牌」建立正統性，轉化歧視為定居動能，形塑六堆認同。</p>
+              </div>
+            </div>
+          </div>
+          <!-- Video Card 4 -->
+          <div class="group outline-none flex flex-col h-full">
+            <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-4 transition-transform hover:-translate-y-1 h-full flex flex-col">
+              <div class="aspect-video bg-black rounded-lg border border-gray-300 relative overflow-hidden mb-4">
+                <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/8GPRoXvwaWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="flex-grow flex flex-col">
+                <span class="text-xs font-bold text-slate-600 mb-2 mt-1">人文沙龍講座紀錄第 94 場</span>
+                <h4 class="text-xl font-bold leading-tight mb-2 group-hover:text-slate-600 transition-colors">「臺南第四個一百年：國立臺灣文學館何以立在府城中心」蘇碩斌教授</h4>
+                <p class="text-sm text-gray-600 mt-auto">講座透過「台南州廳」建築，見證從日治廳舍到文學館的政權更迭與都市變遷，並藉由田野訪談與文獻，揭示都市、歷史與文學交織的親密故事。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- === Row 3 === -->
+          <!-- Video Card 5 -->
+          <div class="group outline-none flex flex-col h-full">
+            <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-4 transition-transform hover:-translate-y-1 h-full flex flex-col">
+              <div class="aspect-video bg-black rounded-lg border border-gray-300 relative overflow-hidden mb-4">
+                <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/Nz5N79L8smw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="flex-grow flex flex-col">
+                <span class="text-xs font-bold text-slate-600 mb-2 mt-1">人文沙龍講座紀錄第 92 場</span>
+                <h4 class="text-xl font-bold leading-tight mb-2 group-hover:text-slate-600 transition-colors">「從他者到我者：天主教白冷外方傳教會在東臺灣」潘宗億教授</h4>
+                <p class="text-sm text-gray-600 mt-auto">講座述說白冷會神父扎根臺東，透過醫療、公東高工及社會扶助，從「他者」化為「在地我者」；並導覽公東聖堂與墓園等記憶地標，見證這段跨國界的深情連結。</p>
+              </div>
+            </div>
+          </div>
+          <!-- Video Card 6 -->
+          <div class="group outline-none flex flex-col h-full">
+            <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-4 transition-transform hover:-translate-y-1 h-full flex flex-col">
+              <div class="aspect-video bg-black rounded-lg border border-gray-300 relative overflow-hidden mb-4">
+                <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/hrtWbYhjVF0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="flex-grow flex flex-col">
+                <span class="text-xs font-bold text-slate-600 mb-2 mt-1">人文沙龍講座紀錄第 91 場</span>
+                <h4 class="text-xl font-bold leading-tight mb-2 group-hover:text-slate-600 transition-colors">「福佑我庄：一個典型台灣村落的民俗地景」楊玉君教授</h4>
+                <p class="text-sm text-gray-600 mt-auto">講座以豐收村為例，透過廟宇、宗祠、洋樓及水流媽信仰，解析神人鬼祭祀背後的移民史與族群脈絡。從建築裝飾到「土地公枴杖」，導讀鄉間地景承載的歷史記憶與豐產儀式。</p>
+              </div>
+            </div>
+          </div>
+
+          
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- --- PROJECT NAVIGATION (Next/Prev) --- -->
+  <section class="border-y border-base-dark">
+    <!-- 下一個專案連結回首頁 -->
+    <a href="index.html#works" class="block w-full group relative overflow-hidden">
+      <!-- Background Hover Effect -->
+      <div class="absolute inset-0 bg-[#FDFBF7] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0"></div>
+      
+      <div class="px-6 py-16 md:py-24 text-center relative z-10 flex flex-col items-center justify-center">
+        <span class="text-sm font-bold tracking-widest text-gray-500 mb-4 group-hover:text-black transition-colors">BACK TO</span>
+        <h2 class="text-3xl md:text-5xl font-black tracking-tighter text-black flex items-center gap-4">
+          查看更多專案作品
+          <i data-lucide="arrow-right" class="w-8 h-8 md:w-12 md:h-12 group-hover:translate-x-4 transition-transform duration-300"></i>
+        </h2>
+      </div>
+    </a>
+  </section>
+
+  <!-- --- FOOTER / CONTACT --- -->
+  <footer id="contact" class="bg-[#1A1A1A] text-white py-16 px-6 border-t-[16px] border-[#FFF]">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-end gap-8">
+      <div class="text-center md:text-left">
+        <h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-4">₍₍◝(°꒳°*)◜₎₎</h2>
+        <p class="text-gray-400 font-medium max-w-sm mb-6">
+          正在尋找具備行銷思維與設計美學的視覺人才嗎？歡迎隨時與我聯繫！
+        </p>
+        <a href="https://reurl.cc/grZooR" class="inline-flex items-center space-x-2 bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-yellow-300 transition-colors">
+          <i class="fa-solid fa-download"></i>
+          <span>作品集PDF下載</span>
+        </a>
+      </div>
+      
+      <div class="flex flex-col items-center md:items-end space-y-4">
+        <div class="flex space-x-4">
+          
+        </div>
+        <div class="text-xs text-gray-500 tracking-widest uppercase font-bold">
+          © 2026 莊淳翔 Yoruei Chuang. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Initialize Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

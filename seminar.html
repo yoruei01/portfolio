@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>專案展示 | 國際學術研討會 視覺設計 - 莊淳翔</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom CSS -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .bg-base { background-color: #FDFBF7; }
+    .text-base-dark { color: #1A1A1A; }
+    .border-base-dark { border-color: #1A1A1A; }
+    
+    /* Instagram 漸層背景 (保留給Footer使用) */
+    .ig-gradient {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+  </style>
+</head>
+<body class="bg-base text-base-dark font-sans min-h-screen relative overflow-x-hidden selection:bg-blue-300 selection:text-black">
+
+  <!-- --- HEADER (置頂導覽列) --- -->
+  <header class="flex flex-col md:flex-row justify-between items-center px-6 py-4 border-b border-base-dark bg-white/95 backdrop-blur-md sticky top-0 z-50 gap-4 md:gap-0">
+    <div class="flex flex-col text-center md:text-left">
+      <h1 class="text-xl font-black tracking-tighter leading-none">莊淳翔 / 作品集 PORTFOLIO</h1>
+    </div>
+
+    <!-- 常駐導覽列 -->
+    <nav class="flex items-center space-x-6 font-bold text-xs md:text-sm tracking-widest">
+      <a href="index.html" class="flex items-center space-x-1 hover:text-blue-600 transition-colors">
+        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+        <span>返回首頁</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- --- PROJECT HERO SECTION --- -->
+  <section class="relative px-6 py-12 md:py-20 border-b border-base-dark overflow-hidden bg-[#EFF6FF]">
+    <!-- 裝飾用背景點綴 -->
+    <div class="absolute top-20 right-10 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 z-0 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10 items-center">
+      
+      <!-- Left: Project Title & Meta -->
+      <div class="lg:col-span-5 flex flex-col justify-center">
+        <div class="inline-block bg-white px-3 py-1 rounded-full text-xs mb-6 font-bold border border-black w-max shadow-sm">
+          主視覺與周邊文宣
+        </div>
+        
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-[1.1] mb-6 text-black">
+          第十屆<br/>數位傳播國際<br/>學術研討會
+        </h1>
+        
+        <p class="text-sm md:text-base leading-relaxed font-bold mb-8 max-w-md text-gray-900 opacity-90">
+          操刀整場學術研討會的視覺統籌。從核心的主視覺海報設計，延伸至工作人員吊牌、三折頁等實體文宣，並負責社群宣傳圖文等數位內容。
+        </p>
+
+        <!-- Meta Info -->
+        <div class="grid grid-cols-2 gap-4 border-t-2 border-black pt-6">
+          <div>
+            <div class="text-[10px] text-black font-bold tracking-widest uppercase mb-1 opacity-70">職位</div>
+            <div class="text-sm font-bold">美術視覺設計</div>
+          </div>
+          <div>
+            <div class="text-[10px] text-black font-bold tracking-widest uppercase mb-1 opacity-70">時間</div>
+            <div class="text-sm font-bold">2023.11 - 2024.04</div>
+          </div>
+          <div class="col-span-2">
+            <div class="text-[10px] text-black font-bold tracking-widest uppercase mb-1 opacity-70">技能</div>
+            <div class="flex flex-wrap gap-2 mt-1">
+              <span class="text-xs bg-black text-white px-2 py-1 rounded font-bold">Illustrator</span>
+              <span class="text-xs bg-black text-white px-2 py-1 rounded font-bold">Photoshop</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Main Hero Image -->
+      <div class="lg:col-span-7">
+        <div class="bg-white rounded-2xl border-2 border-black shadow-[8px_8px_0_0_rgba(0,0,0,1)] aspect-[4/3] lg:aspect-[3/2] flex items-center justify-center p-4 relative overflow-hidden transform md:-rotate-2 transition-transform hover:rotate-0 duration-500">
+          
+          <!-- ▼ 圖片展示框 (實線邊框) ▼ -->
+          <div class="w-full h-full border border-black rounded-lg flex flex-col items-center justify-center text-gray-500 font-bold bg-gray-50 text-sm relative overflow-hidden">
+            
+           <img src="img/seminar_visual.png" alt="研討會主視覺" class="absolute inset-0 w-full h-full object-cover z-10">
+
+            <i data-lucide="palette" class="w-10 h-10 mb-2 relative z-0"></i>
+            <span class="relative z-0 text-center">[放入研討會主視覺海報 大圖]</span>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- --- PROJECT CONTENT --- -->
+  <section class="py-16 md:py-24 px-6 bg-base">
+    <div class="max-w-6xl mx-auto space-y-24">
+
+      <!-- Section 1: Concept & Key Visual -->
+      <div class="flex flex-col items-start">
+        <div class="flex items-center space-x-2 border-b-2 border-black pb-2 mb-8 w-full md:w-auto">
+          <i data-lucide="image" class="w-5 h-5 text-blue-600"></i>
+          <h2 class="text-xl font-black tracking-widest">專案介紹</h2>
+        </div>
+        
+        <div class="flex flex-col md:flex-row gap-10 items-center w-full">
+          <div class="md:w-1/2 flex flex-col justify-center">
+            <h3 class="text-2xl font-bold mb-4">台灣香港的文化跨域交流：回望與前行</h3>
+            <p class="text-gray-700 leading-relaxed font-medium mb-6">
+              第十屆數位傳播國際學術研討會聚焦於「台港文化交流」。在主視覺的構思上，我將「交流與前行」的概念具象化為一輛在星空中行駛的火車。車廂內承載著不同領域的講者與學者，象徵著思想的匯聚與歷史的軌跡。
+            </p>
+            <p class="text-gray-700 leading-relaxed font-medium mb-8">
+              色彩計畫選用深邃的夜空藍搭配復古的磚紅色火車，並運用星光點綴，營造出學術研討會的沉穩感與探索未知領域的氛圍。
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-blue-100 text-blue-800 font-bold px-2 py-1 rounded border border-blue-300">#主視覺設計</span>
+              <span class="text-xs bg-gray-100 text-gray-600 font-bold px-2 py-1 rounded border border-gray-300">#插畫合成</span>
+            </div>
+          </div>
+          
+          <div class="md:w-1/2 w-full">
+            <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-4 relative group">
+              <div class="bg-gray-50 w-full aspect-[1/1.414] rounded-lg border border-black flex flex-col items-center justify-center text-gray-500 font-bold overflow-hidden relative">
+                <img src="img/seminar_poster.png" alt="主視覺海報" class="absolute inset-0 w-full h-full object-cover z-10 transition-transform group-hover:scale-105 duration-500">
+                <i data-lucide="monitor" class="w-8 h-8 mb-2 relative z-0"></i>
+                <span class="relative z-0">[主視覺海報/去背圖展示]</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: Print & Identity (三折頁 & 吊牌) -->
+      <div class="flex flex-col items-start pt-8 border-t border-gray-300">
+        <div class="flex items-center space-x-2 border-b-2 border-black pb-2 mb-10 w-full md:w-auto">
+          <i data-lucide="printer" class="w-5 h-5 text-indigo-600"></i>
+          <h2 class="text-xl font-black tracking-widest">文宣印刷物設計</h2>
+        </div>
+        
+        <p class="text-gray-700 leading-relaxed font-medium mb-8 max-w-2xl">
+          將主視覺的元素延伸至現場各項實體文宣品。確保從來賓報到、領取名牌，到翻閱議程手冊的過程中，都能感受到一致的視覺體驗。
+        </p>
+
+        <!-- 2 Columns Grid for Print Materials -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+          
+          <!-- Trifold Brochure (三折頁) -->
+          <div class="group">
+            <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-4 flex flex-col h-full">
+              <div class="aspect-square bg-gray-50 rounded-lg border border-black relative overflow-hidden mb-6 flex items-center justify-center text-gray-400 font-bold text-sm transition-transform group-hover:-translate-y-1 duration-300">
+                <img src="img/seminar_paper.png" alt="三折頁設計展開圖" class="absolute inset-0 w-full h-full object-cover z-10">
+                <div class="flex flex-col items-center z-0">
+                  <i data-lucide="book-open" class="w-8 h-8 mb-2"></i>
+                  <span>[放入三折頁設計展開圖]</span>
+                </div>
+              </div>
+              <h3 class="text-xl font-bold mb-2 text-black">議程三折頁設計</h3>
+              <p class="text-sm text-gray-600">
+                將兩天的豐富議程、講者介紹與地圖資訊進行資訊層級劃分，透過乾淨的排版與網格系統，讓與會者能輕鬆查閱活動細節。
+              </p>
+            </div>
+          </div>
+
+          <!-- Staff Badges (工作人員/來賓吊牌) -->
+          <div class="group">
+            <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-4 flex flex-col h-full">
+              <div class="aspect-square bg-gray-50 rounded-lg border border-black relative overflow-hidden mb-6 flex items-center justify-center text-gray-400 font-bold text-sm transition-transform group-hover:-translate-y-1 duration-300">
+                <img src="img/seminar_mockup_03.png" alt="工作人員吊牌設計" class="absolute inset-0 w-full h-full object-cover z-10">
+                <div class="flex flex-col items-center z-0">
+                  <i data-lucide="contact" class="w-8 h-8 mb-2"></i>
+                  <span>[放入工作人員 / 來賓名牌 吊牌圖]</span>
+                </div>
+              </div>
+              <h3 class="text-xl font-bold mb-2 text-black">識別名牌與工作人員吊牌</h3>
+              <p class="text-sm text-gray-600">
+                利用主視覺的夜空藍與輔助色調區分「講者、貴賓、工作人員」，並設計清晰醒目的名字區塊，提升現場辨識度與活動專業感。
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Section 3: Social Media (社群圖文) -->
+      <div class="flex flex-col items-start pt-8 border-t border-gray-300">
+        <div class="flex items-center space-x-2 border-b-2 border-black pb-2 mb-10 w-full md:w-auto">
+          <i data-lucide="smartphone" class="w-5 h-5 text-teal-600"></i>
+          <h2 class="text-xl font-black tracking-widest">社群行銷內容</h2>
+        </div>
+        
+        <div class="flex flex-col md:flex-row gap-10 items-center w-full">
+          
+          <!-- Social Media Posts (Text) -->
+          <div class="md:w-1/2 flex flex-col justify-center">
+            <h3 class="text-2xl font-bold mb-4">社群宣傳圖文編排</h3>
+            <p class="text-gray-700 leading-relaxed font-medium mb-6">
+              為前期宣傳活動，我設計了一系列社群貼文版型。包含講者陣容介紹、專題議程亮點等。將主視覺的「火車與星空」元素拆解再重組，確保每一張貼文既能獨立吸睛，又能維持整體活動調性。
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-teal-100 text-teal-800 font-bold px-2 py-1 rounded border border-teal-300">#社群圖文</span>
+              <span class="text-xs bg-gray-100 text-gray-600 font-bold px-2 py-1 rounded border border-gray-300">#版面編排</span>
+            </div>
+          </div>
+
+          <!-- Social Media Posts (Image - 1:1 Square) -->
+          <div class="md:w-1/2 w-full max-w-[500px] mx-auto">
+            <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-4 relative group">
+              <div class="bg-gray-50 w-full aspect-square rounded-lg border border-black flex flex-col items-center justify-center text-gray-400 font-bold overflow-hidden relative">
+                <img src="img/seminar_post.png" alt="社群貼文圖" class="absolute inset-0 w-full h-full object-cover z-10 transition-transform group-hover:scale-105 duration-500">
+                <i data-lucide="instagram" class="w-8 h-8 mb-2 relative z-0"></i>
+                <span class="relative z-0 text-center">[放入社群貼文宣傳圖<br/>建議放 IG 多圖輪播 Mockup]</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- --- PROJECT NAVIGATION (Next/Prev) --- -->
+  <section class="border-y border-base-dark">
+    <!-- 下一個專案連結回首頁 -->
+    <a href="index.html#works" class="block w-full group relative overflow-hidden">
+      <!-- Background Hover Effect -->
+      <div class="absolute inset-0 bg-[#FDFBF7] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0"></div>
+      
+      <div class="px-6 py-16 md:py-24 text-center relative z-10 flex flex-col items-center justify-center">
+        <span class="text-sm font-bold tracking-widest text-gray-500 mb-4 group-hover:text-black transition-colors">BACK TO</span>
+        <h2 class="text-3xl md:text-5xl font-black tracking-tighter text-black flex items-center gap-4">
+          查看更多專案作品
+          <i data-lucide="arrow-right" class="w-8 h-8 md:w-12 md:h-12 group-hover:translate-x-4 transition-transform duration-300"></i>
+        </h2>
+      </div>
+    </a>
+  </section>
+
+  <!-- --- FOOTER / CONTACT --- -->
+  <footer id="contact" class="bg-[#1A1A1A] text-white py-16 px-6 border-t-[16px] border-[#FFF]">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-end gap-8">
+      <div class="text-center md:text-left">
+        <h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-4">₍₍◝(°꒳°*)◜₎₎</h2>
+        <p class="text-gray-400 font-medium max-w-sm mb-6">
+          正在尋找具備行銷思維與設計美學的視覺人才嗎？歡迎隨時與我聯繫！
+        </p>
+        <a href="https://reurl.cc/grZooR" class="inline-flex items-center space-x-2 bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-yellow-300 transition-colors">
+          <i class="fa-solid fa-download"></i>
+          <span>作品集PDF下載</span>
+        </a>
+      </div>
+      
+      <div class="flex flex-col items-center md:items-end space-y-4">
+        <div class="flex space-x-4">
+          
+        </div>
+        <div class="text-xs text-gray-500 tracking-widest uppercase font-bold">
+          © 2026 莊淳翔 Yoruei Chuang. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Initialize Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

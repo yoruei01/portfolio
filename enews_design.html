@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>專案展示 | 中正E報 總編輯與視覺設計 - 莊淳翔</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom CSS -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .bg-base { background-color: #FDFBF7; }
+    .text-base-dark { color: #1A1A1A; }
+    .border-base-dark { border-color: #1A1A1A; }
+    
+    /* Instagram 漸層背景 */
+    .ig-gradient {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+  </style>
+</head>
+<body class="bg-base text-base-dark font-sans min-h-screen relative overflow-x-hidden selection:bg-indigo-300 selection:text-black">
+
+  <!-- --- HEADER (置頂導覽列) --- -->
+  <header class="flex flex-col md:flex-row justify-between items-center px-6 py-4 border-b border-base-dark bg-white/95 backdrop-blur-md sticky top-0 z-50 gap-4 md:gap-0">
+    <div class="flex flex-col text-center md:text-left">
+      <h1 class="text-xl font-black tracking-tighter leading-none">莊淳翔 / 作品集 PORTFOLIO</h1>
+    </div>
+
+    <!-- 常駐導覽列 -->
+    <nav class="flex items-center space-x-6 font-bold text-xs md:text-sm tracking-widest">
+      <a href="index.html" class="flex items-center space-x-1 hover:text-blue-600 transition-colors">
+        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+        <span>返回首頁</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- --- PROJECT HERO SECTION --- -->
+  <section class="relative px-6 py-12 md:py-20 border-b border-base-dark overflow-hidden bg-[#E0E7FF]">
+    <!-- 裝飾用背景點綴 -->
+    <div class="absolute top-20 right-10 w-80 h-80 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 z-0 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10 items-center">
+      
+      <!-- Left: Project Title & Meta -->
+      <div class="lg:col-span-5 flex flex-col justify-center">
+        <div class="inline-block bg-white px-3 py-1 rounded-full text-xs mb-6 font-bold border border-black w-max shadow-sm">
+          新聞採訪與影音
+        </div>
+        
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-[1.1] mb-6 text-black">
+          實習新聞媒體<br/>《中正E報》<br/>
+          <span class="text-2xl md:text-3xl lg:text-4xl text-gray-700 mt-2 block">總編輯 / 視覺設計</span>
+        </h1>
+        
+        <p class="text-sm md:text-base leading-relaxed font-bold mb-8 max-w-md text-gray-900 opacity-90">
+          於實習媒體中肩負總編輯與美術編輯雙重角色。除了統合所有記者的選題與出稿進度，更重新定調整個新聞頻道的視覺風格，為複雜的新聞內容設計清晰易懂的排版與圖表。
+        </p>
+
+        <!-- Meta Info -->
+        <div class="grid grid-cols-2 gap-4 border-t-2 border-black pt-6">
+          <div>
+            <div class="text-[10px] text-black font-bold tracking-widest uppercase mb-1 opacity-70">職位</div>
+            <div class="text-sm font-bold">總編輯、美術編輯</div>
+          </div>
+          <div>
+            <div class="text-[10px] text-black font-bold tracking-widest uppercase mb-1 opacity-70">時間</div>
+            <div class="text-sm font-bold">2023.08 - 2024.06</div>
+          </div>
+          <div class="col-span-2">
+            <div class="text-[10px] text-black font-bold tracking-widest uppercase mb-1 opacity-70">技能</div>
+            <div class="flex flex-wrap gap-2 mt-1">
+              <span class="text-xs bg-black text-white px-2 py-1 rounded font-bold">頻道視覺重塑</span>
+              <span class="text-xs bg-black text-white px-2 py-1 rounded font-bold">社群版面編排</span>
+              <span class="text-xs bg-black text-white px-2 py-1 rounded font-bold">新聞室管理</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Main Hero Image -->
+      <div class="lg:col-span-7">
+        <div class="bg-white rounded-2xl border-2 border-black shadow-[8px_8px_0_0_rgba(0,0,0,1)] aspect-[16/9] lg:aspect-[16/9] flex items-center justify-center p-4 relative overflow-hidden transform md:-rotate-2 transition-transform hover:rotate-0 duration-500">
+          
+          <!-- ▼ 圖片展示框 (實線邊框) ▼ -->
+          <div class="w-full h-full border border-black rounded-lg flex flex-col items-center justify-center text-gray-500 font-bold bg-gray-50 text-sm relative overflow-hidden">
+            
+             <img src="img/enews_2.png" alt="中正E報視覺設計總覽" class="absolute inset-0 w-full h-full object-cover z-10"> 
+
+            <i data-lucide="layout-dashboard" class="w-10 h-10 mb-2 relative z-0"></i>
+            <span class="relative z-0 text-center">[中正E報 新聞視覺設計<br/>總覽大圖]</span>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- --- PROJECT CONTENT --- -->
+  <section class="py-16 md:py-24 px-6 bg-base">
+    <div class="max-w-5xl mx-auto space-y-24">
+
+      <!-- Section 1: Overview & Role -->
+      <div class="flex flex-col md:flex-row gap-8 items-start">
+        <div class="md:w-1/3 flex flex-col">
+          <div class="flex items-center space-x-2 border-b-2 border-black pb-2 mb-4">
+            <i data-lucide="users" class="w-5 h-5 text-indigo-600"></i>
+            <h2 class="text-xl font-black tracking-widest">專案介紹</h2>
+          </div>
+        </div>
+        <div class="md:w-2/3">
+          <h3 class="text-2xl font-bold mb-4">掌控新聞室節奏與重塑品牌視覺</h3>
+          <p class="text-gray-700 leading-relaxed font-medium mb-4">
+            在《中正E報》擔任總編輯的兩個月期間，我負責統合並領導全體實習記者的運作。從初期的選題會議、採訪切入點討論，到後期的文稿審閱與影音初剪確認，確保每一則報導都能達到「關心在地、據實報導」的媒體核心價值。
+          </p>
+          <p class="text-gray-700 leading-relaxed font-medium">
+            同時，在擔任美術編輯期間，我發現頻道過去的視覺較為發散。因此我決定重新定調品牌視覺規範，以深藍色（#2C3E92）為主色調，設計出一套具有專業新聞感、同時適合社群閱讀的視覺模板，包含頻道橫幅、影音字卡與社群圖文排版。
+          </p>
+          
+          <!-- ▼ 新增：LOGO 與色碼展示卡片 ▼ -->
+          <div class="mt-8 bg-white border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] rounded-xl p-5 flex flex-col sm:flex-row items-stretch gap-6">
+            
+            <!-- LOGO 預留區 -->
+            <div class="flex-1 w-full bg-gray-50 border-2 border-dashed border-gray-400 rounded-lg flex flex-col items-center justify-center p-8 relative overflow-hidden transition-transform hover:scale-[1.02] duration-300">
+              <img src="img/enews_logo_text.png" alt="中正E報 LOGO 標準字" class="absolute inset-0 w-full h-full object-contain p-4 z-10">
+            
+            </div>
+            
+            <!-- 品牌色碼標註區 -->
+            <div class="sm:w-1/3 w-full flex flex-col justify-center border-t sm:border-t-0 sm:border-l border-gray-200 pt-5 sm:pt-0 sm:pl-6 gap-4">
+              <div class="text-xs font-bold text-gray-500 tracking-widest uppercase">LOGO顏色</div>
+              
+              <!-- 主要色碼圓餅 -->
+              <div class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-full bg-[#2C3E92] border-2 border-black shadow-[2px_2px_0_0_rgba(0,0,0,1)] group-hover:scale-110 transition-transform"></div>
+                <div class="flex flex-col">
+                  <span class="font-black text-lg leading-none tracking-wide text-black">#2C3E92</span>
+                  <span class="text-xs font-bold text-indigo-600 mt-1">主色深藍</span>
+                </div>
+              </div>
+
+              <!-- 輔助色碼圓餅 -->
+              <div class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-full bg-[#fbb03b] border-2 border-black shadow-[2px_2px_0_0_rgba(0,0,0,1)] group-hover:scale-110 transition-transform"></div>
+                <div class="flex flex-col">
+                  <span class="font-black text-lg leading-none tracking-wide text-black uppercase">#FBB03B</span>
+                  <span class="text-xs font-bold text-yellow-600 mt-1">輔色亮黃</span>
+                </div>
+              </div>
+
+            </div>
+            
+          </div>
+          <!-- ▲ 新增結束 ▲ -->
+
+        </div>
+      </div>
+
+      <!-- Section 2: Visual Identity (Banner & Covers) -->
+      <div class="flex flex-col items-start pt-8 border-t border-gray-300">
+        <div class="flex items-center space-x-2 border-b-2 border-black pb-2 mb-12 w-full md:w-auto">
+          <i data-lucide="palette" class="w-5 h-5 text-blue-500"></i>
+          <h2 class="text-xl font-black tracking-widest">品牌識別</h2>
+        </div>
+        
+        <!-- 2.1 Banner Design -->
+        <div class="w-full mb-16">
+          <h3 class="text-2xl font-bold mb-4">建立專業一致的頻道橫幅 (Banner)</h3>
+          <p class="text-gray-700 leading-relaxed font-medium mb-6 max-w-3xl">
+            為社群平台與網站設計的全新 Banner，以網格線條作為背景，象徵新聞的嚴謹與客觀。並將頻道的四大核心理念「實習媒體｜關心在地｜據實報導｜多元發聲」以俐落的排版呈現。
+          </p>
+          
+          <div class="w-full bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-4 relative group">
+            <div class="bg-gray-50 w-full aspect-[21/9] md:aspect-[4/1] rounded-lg border border-black flex flex-col items-center justify-center text-gray-500 font-bold overflow-hidden relative">
+              <img src="img/enews_banner.png" alt="頻道橫幅設計" class="absolute inset-0 w-full h-full object-cover z-10 transition-transform group-hover:scale-105 duration-500">
+             
+            </div>
+          </div>
+        </div>
+
+        <!-- 2.2 Video Thumbnails & Cards -->
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div class="flex flex-col justify-center">
+            <h3 class="text-2xl font-bold mb-4">影音新聞封面與單元字卡</h3>
+            <p class="text-gray-700 leading-relaxed font-medium mb-6">
+              影音報導的點擊率往往取決於封面的吸睛程度。我制定了統一的封面字體規範與對比強烈的排版，讓觀眾在滑動網頁時能瞬間捕捉到新聞重點（如：「10%服務費去哪了？」）。此外，也為節目單元設計了標準的片頭字卡（Title Card），強化新聞節目的專業包裝。
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-blue-100 text-blue-800 font-bold px-2 py-1 rounded border border-blue-300">#YouTube封面設計</span>
+              <span class="text-xs bg-gray-100 text-gray-600 font-bold px-2 py-1 rounded border border-gray-300">#節目包裝</span>
+            </div>
+          </div>
+          
+          <div class="grid grid-cols-1 gap-4">
+            <!-- Thumbnail 1 -->
+            <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-3 group">
+              <div class="bg-gray-50 aspect-video rounded-lg border border-black flex flex-col items-center justify-center text-gray-500 font-bold text-sm relative overflow-hidden">
+                <img src="img/enews_3.jpg" alt="影音新聞封面" class="absolute inset-0 w-full h-full object-cover z-10 transition-transform group-hover:scale-105 duration-500">
+                <i data-lucide="image" class="w-6 h-6 mb-2 relative z-0"></i>
+                <span class="relative z-0">[影音新聞封面：#10%服務費去哪了?]</span>
+              </div>
+            </div>
+            <!-- Title Card -->
+            <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-3 group">
+              <div class="bg-gray-50 aspect-video rounded-lg border border-black flex flex-col items-center justify-center text-gray-500 font-bold text-sm relative overflow-hidden">
+                 <img src="img/enews_4.png" alt="單元片頭字卡" class="absolute inset-0 w-full h-full object-cover z-10 transition-transform group-hover:scale-105 duration-500">
+                <i data-lucide="monitor-play" class="w-6 h-6 mb-2 relative z-0"></i>
+                <span class="relative z-0">[影音新聞 單元片頭字卡]</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Editorial Layout (Newsletter) -->
+      <div class="flex flex-col md:flex-row gap-12 items-start pt-8 border-t border-gray-300">
+        <div class="md:w-1/3 flex flex-col">
+          <div class="flex items-center space-x-2 border-b-2 border-black pb-2 mb-4">
+            <i data-lucide="file-text" class="w-5 h-5 text-indigo-600"></i>
+            <h2 class="text-xl font-black tracking-widest">平面新聞編排
+            </h2>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">化繁為簡的<br/>重點新聞預告排版</h3>
+          <p class="text-gray-700 leading-relaxed font-medium mb-6">
+            每期出刊時，我們需要將龐大的影音與文字新聞資訊，濃縮成一張適合社群閱讀的「重點新聞預告」長圖。
+          </p>
+          <p class="text-gray-700 leading-relaxed font-medium mb-6">
+            我利用嚴謹的網格系統（Grid System），將版面清晰劃分為「影音新聞」與「文字新聞」兩大區塊。透過大量的留白、層次分明的標題大小，以及擷取最精華的引言，成功降低了長篇新聞的閱讀門檻，讓讀者能快速掌握當期重點。
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-xs bg-indigo-100 text-indigo-800 font-bold px-2 py-1 rounded border border-indigo-300">#資訊架構設計</span>
+            <span class="text-xs bg-gray-100 text-gray-600 font-bold px-2 py-1 rounded border border-gray-300">#長圖文編排</span>
+          </div>
+        </div>
+        
+        <div class="md:w-2/3 w-full flex justify-center">
+          <!-- Tall Image Showcase -->
+          <div class="bg-white rounded-xl border border-black shadow-[8px_8px_0_0_rgba(0,0,0,1)] p-4 w-full max-w-[500px] group">
+            <div class="bg-gray-50 aspect-[3/4] md:aspect-[2/3] rounded-lg border border-black flex flex-col items-center justify-center text-gray-500 font-bold text-sm text-center px-4 relative overflow-hidden">
+              <img src="img/enews_567.png" alt="重點新聞預告排版" class="absolute inset-0 w-full h-full object-cover object-top z-10 transition-transform group-hover:scale-105 duration-700">
+              <i data-lucide="layout-template" class="w-8 h-8 mb-2 relative z-0"></i>
+              <span class="relative z-0">[重點新聞預告<br/>長條圖文排版 大圖]</span>
+            </div>
+            <div class="mt-4 text-xs text-gray-500 font-bold px-2 text-center">
+              ▲ 採用雙欄設計的新聞預告排版，兼顧資訊承載量與閱讀舒適度。
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- --- PROJECT NAVIGATION (Next/Prev) --- -->
+  <section class="border-y border-base-dark">
+    <!-- 下一個專案連結回首頁 -->
+    <a href="index.html#works" class="block w-full group relative overflow-hidden">
+      <!-- Background Hover Effect -->
+      <div class="absolute inset-0 bg-[#FDFBF7] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0"></div>
+      
+      <div class="px-6 py-16 md:py-24 text-center relative z-10 flex flex-col items-center justify-center">
+        <span class="text-sm font-bold tracking-widest text-gray-500 mb-4 group-hover:text-black transition-colors">BACK TO</span>
+        <h2 class="text-3xl md:text-5xl font-black tracking-tighter text-black flex items-center gap-4">
+          查看更多專案作品
+          <i data-lucide="arrow-right" class="w-8 h-8 md:w-12 md:h-12 group-hover:translate-x-4 transition-transform duration-300"></i>
+        </h2>
+      </div>
+    </a>
+  </section>
+
+ <!-- --- FOOTER / CONTACT --- -->
+  <footer id="contact" class="bg-[#1A1A1A] text-white py-16 px-6 border-t-[16px] border-[#FFF]">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-end gap-8">
+      <div class="text-center md:text-left">
+        <h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-4">₍₍◝(°꒳°*)◜₎₎</h2>
+        <p class="text-gray-400 font-medium max-w-sm mb-6">
+          正在尋找具備行銷思維與設計美學的視覺人才嗎？歡迎隨時與我聯繫！
+        </p>
+        <a href="https://reurl.cc/grZooR" class="inline-flex items-center space-x-2 bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-yellow-300 transition-colors">
+          <i class="fa-solid fa-download"></i>
+          <span>作品集PDF下載</span>
+        </a>
+      </div>
+      
+      <div class="flex flex-col items-center md:items-end space-y-4">
+        <div class="flex space-x-4">
+          
+        </div>
+        <div class="text-xs text-gray-500 tracking-widest uppercase font-bold">
+          © 2026 莊淳翔 Yoruei Chuang. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Initialize Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

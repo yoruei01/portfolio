@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>專案展示 | Cake 2024 校園大使 - 莊淳翔</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom CSS -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .bg-base { background-color: #FDFBF7; }
+    .text-base-dark { color: #1A1A1A; }
+    .border-base-dark { border-color: #1A1A1A; }
+    
+    /* Instagram 漸層背景 */
+    .ig-gradient {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+  </style>
+</head>
+<body class="bg-base text-base-dark font-sans min-h-screen relative overflow-x-hidden selection:bg-green-300 selection:text-black">
+
+  <!-- --- HEADER (置頂導覽列) --- -->
+  <header class="flex flex-col md:flex-row justify-between items-center px-6 py-4 border-b border-base-dark bg-white/95 backdrop-blur-md sticky top-0 z-50 gap-4 md:gap-0">
+    <div class="flex flex-col text-center md:text-left">
+      <h1 class="text-xl font-black tracking-tighter leading-none">莊淳翔 / 作品集 PORTFOLIO</h1>
+    </div>
+
+    <!-- 常駐導覽列 -->
+    <nav class="flex items-center space-x-6 font-bold text-xs md:text-sm tracking-widest">
+      <a href="index.html" class="flex items-center space-x-1 hover:text-blue-600 transition-colors">
+        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+        <span>返回首頁</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- --- PROJECT HERO SECTION --- -->
+  <section class="relative px-6 py-12 md:py-20 border-b border-base-dark overflow-hidden bg-[#E6F4EA]">
+    <!-- 裝飾用背景點綴 -->
+    <div class="absolute top-10 right-10 w-64 h-64 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 z-0 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10 items-center">
+      
+      <!-- Left: Project Title & Meta -->
+      <div class="lg:col-span-5 flex flex-col justify-center">
+        <div class="inline-block bg-white px-3 py-1 rounded-full text-xs mb-6 font-bold border border-black w-max shadow-sm">
+          社群企劃與視覺
+        </div>
+        
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-[1.1] mb-6 text-black">
+          Cake 2024<br/>校園大使計畫<br/>
+          <span class="text-2xl md:text-3xl lg:text-4xl text-gray-700 mt-2 block">社群圖文與短影音行銷</span>
+        </h1>
+        
+        <p class="text-sm md:text-base leading-relaxed font-bold mb-8 max-w-md text-gray-900 opacity-90">
+          擔任 CakeResume 台灣校園大使，策劃引發學生共鳴的社群圖文與短影音，並於中正大學徵才博覽會籌辦線下推廣活動，完美結合線上與線下的校園行銷。
+        </p>
+
+        <!-- Meta Info -->
+        <div class="grid grid-cols-2 gap-4 border-t-2 border-black pt-6">
+          <div>
+            <div class="text-[10px] text-black font-bold tracking-widest uppercase mb-1 opacity-70">職位</div>
+            <div class="text-sm font-bold">校園大使 (社群/視覺企劃)</div>
+          </div>
+          <div>
+            <div class="text-[10px] text-black font-bold tracking-widest uppercase mb-1 opacity-70">時間</div>
+            <div class="text-sm font-bold">2024.02 - 2024.12</div>
+          </div>
+          <div class="col-span-2">
+            <div class="text-[10px] text-black font-bold tracking-widest uppercase mb-1 opacity-70">技能</div>
+            <div class="flex flex-wrap gap-2 mt-1">
+              <span class="text-xs bg-black text-white px-2 py-1 rounded font-bold">社群圖文企劃</span>
+              <span class="text-xs bg-black text-white px-2 py-1 rounded font-bold">短影音剪輯</span>
+              <span class="text-xs bg-black text-white px-2 py-1 rounded font-bold">線下實體活動</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Main Hero Image -->
+      <div class="lg:col-span-7">
+        <div class="bg-white rounded-2xl border-2 border-black shadow-[8px_8px_0_0_rgba(0,0,0,1)] aspect-[4/3] lg:aspect-[3/2] flex items-center justify-center p-4 relative overflow-hidden transform md:-rotate-2 transition-transform hover:rotate-0 duration-500">
+          
+          <!-- ▼ 圖片展示框 (實線邊框) ▼ -->
+          <div class="w-full h-full border border-black rounded-lg flex flex-col items-center justify-center text-gray-500 font-bold bg-gray-50 text-sm relative overflow-hidden">
+            
+            
+            <img src="img/cake_01.JPG" alt="Cake校園大使團隊合照" class="absolute inset-0 w-full h-full object-cover z-10">
+
+            <i data-lucide="users" class="w-10 h-10 mb-2 relative z-0"></i>
+            <span class="relative z-0 text-center">[Cake校園大使 團隊合照 / <br/> 徵才博覽會現場 大圖]</span>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- --- PROJECT CONTENT --- -->
+  <section class="py-16 md:py-24 px-6 bg-base">
+    <div class="max-w-5xl mx-auto space-y-20">
+
+      <!-- Section 1: Overview -->
+      <div class="flex flex-col md:flex-row gap-8 items-start">
+        <div class="md:w-1/3 flex flex-col">
+          <div class="flex items-center space-x-2 border-b-2 border-black pb-2 mb-4">
+            <i data-lucide="target" class="w-5 h-5 text-green-600"></i>
+            <h2 class="text-xl font-black tracking-widest">專案介紹</h2>
+          </div>
+        </div>
+        <div class="md:w-2/3">
+          <h3 class="text-2xl font-bold mb-4">O2O 虛實整合：從社群吸睛到實體轉化</h3>
+          <p class="text-gray-700 leading-relaxed font-medium mb-4">
+            身為知名求職平台 Cake (原 CakeResume) 的校園大使，我的任務是將平台的優質資源推廣給即將步入職場的大學生。為了打破傳統宣傳的生硬感，我採取了 <b>O2O (Online to Offline)</b> 的整合行銷策略。
+          </p>
+          <p class="text-gray-700 leading-relaxed font-medium">
+            在線上（Online），我透過圖文漫畫與短影音 (Shorts/Reels) 精準打中學生的「求職焦慮」；在線下（Offline），我於中正大學徵才博覽會策劃了專屬的推廣攤位與互動遊戲，成功拉近品牌與學生之間的距離。
+          </p>
+        </div>
+      </div>
+
+      <!-- Section 2: Social Media (Comics & Reels/Shorts) -->
+      <div class="flex flex-col items-start pt-8 border-t border-gray-300">
+        <div class="flex items-center space-x-2 border-b-2 border-black pb-2 mb-12 w-full md:w-auto">
+          <i data-lucide="pen-tool" class="w-5 h-5 text-blue-500"></i>
+          <h2 class="text-xl font-black tracking-widest">社群行銷內容</h2>
+        </div>
+        
+        <!-- 2.1: 圖文漫畫 (正方形幻燈片) -->
+        <div class="flex flex-col md:flex-row gap-10 items-center mb-24 w-full">
+          <div class="md:w-1/2 flex flex-col justify-center">
+            <h3 class="text-2xl font-bold mb-4">引發共鳴的「求職焦慮」圖文漫畫</h3>
+            <p class="text-gray-700 leading-relaxed font-medium mb-4">
+              為宣傳 CAKE 2024 CAREER FAIR 職涯博覽會，我繪製了以大學生為主角的短篇漫畫。以「畢業之後我該做什麼？」、「網路上的工作不適合我」等真實痛點作為劇情切入點，自然地帶出活動資訊與平台解方。
+            </p>
+            <p class="text-gray-700 leading-relaxed font-medium mb-6">
+              運用生動的手繪角色與多圖輪播的漫畫分鏡，取代傳統死板的單張宣傳海報，有效提升社群觸及率與學生的觀看停留時間。
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs bg-green-100 text-green-800 font-bold px-2 py-1 rounded border border-green-300">#社群圖文</span>
+              <span class="text-xs bg-gray-100 text-gray-600 font-bold px-2 py-1 rounded border border-gray-300">#原創漫畫設計</span>
+            </div>
+          </div>
+          
+          <!-- 正方形圖文輪播展示 (Carousel) -->
+          <div class="md:w-1/2 w-full max-w-[400px] mx-auto bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-4 relative group">
+            <div id="comic-carousel" class="bg-gray-50 w-full aspect-square rounded-lg border border-black relative overflow-hidden">
+              <!-- 輪播軌道 -->
+              <div id="comic-track" class="flex w-full h-full transition-transform duration-500 ease-in-out">
+                <!-- Slide 1 -->
+                <div class="w-full h-full flex-shrink-0 flex flex-col items-center justify-center relative">
+                  <img src="img/cakepost/01.png" alt="圖文漫畫 P1" class="absolute inset-0 w-full h-full object-cover z-10">
+                  <i data-lucide="image" class="w-8 h-8 mb-2 relative z-0 text-gray-400"></i>
+                  <span class="relative z-0 text-gray-500 font-bold">[圖文漫畫 P1]</span>
+                </div>
+                <!-- Slide 2 -->
+                <div class="w-full h-full flex-shrink-0 flex flex-col items-center justify-center relative bg-gray-100">
+                  <img src="img/cakepost/02.png" alt="圖文漫畫 P2" class="absolute inset-0 w-full h-full object-cover z-10">
+                  <i data-lucide="image" class="w-8 h-8 mb-2 relative z-0 text-gray-400"></i>
+                  <span class="relative z-0 text-gray-500 font-bold">[圖文漫畫 P2]</span>
+                </div>
+                <!-- Slide 3 -->
+                <div class="w-full h-full flex-shrink-0 flex flex-col items-center justify-center relative bg-gray-200">
+                  <img src="img/cakepost/03.jpg" alt="圖文漫畫 P3" class="absolute inset-0 w-full h-full object-cover z-10">
+                  <i data-lucide="image" class="w-8 h-8 mb-2 relative z-0 text-gray-400"></i>
+                  <span class="relative z-0 text-gray-500 font-bold">[圖文漫畫 P3]</span>
+                </div>
+                <!-- Slide 4 -->
+                <div class="w-full h-full flex-shrink-0 flex flex-col items-center justify-center relative bg-gray-200">
+                  <img src="img/cakepost/04.png" alt="圖文漫畫 P4" class="absolute inset-0 w-full h-full object-cover z-10">
+                  <i data-lucide="image" class="w-8 h-8 mb-2 relative z-0 text-gray-400"></i>
+                  <span class="relative z-0 text-gray-500 font-bold">[圖文漫畫 P4]</span>
+                </div>
+                <!-- Slide 5 -->
+                <div class="w-full h-full flex-shrink-0 flex flex-col items-center justify-center relative bg-gray-200">
+                  <img src="img/cakepost/05.png" alt="圖文漫畫 P5" class="absolute inset-0 w-full h-full object-cover z-10">
+                  <i data-lucide="image" class="w-8 h-8 mb-2 relative z-0 text-gray-400"></i>
+                  <span class="relative z-0 text-gray-500 font-bold">[圖文漫畫 P5]</span>
+                </div>
+              </div>
+              
+              <!-- 左右控制按鈕 -->
+              <button class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white/90 border border-black rounded-full flex items-center justify-center z-20 hover:bg-black hover:text-white transition-colors shadow-sm opacity-0 group-hover:opacity-100" onclick="prevComic()">
+                <i data-lucide="chevron-left" class="w-4 h-4"></i>
+              </button>
+              <button class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white/90 border border-black rounded-full flex items-center justify-center z-20 hover:bg-black hover:text-white transition-colors shadow-sm opacity-0 group-hover:opacity-100" onclick="nextComic()">
+                <i data-lucide="chevron-right" class="w-4 h-4"></i>
+              </button>
+              
+              <!-- 導覽點 (增加到5個) -->
+              <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2 z-20" id="comic-dots-container">
+                <button class="comic-dot w-2 h-2 rounded-full bg-black transition-colors" onclick="goToComic(0)"></button>
+                <button class="comic-dot w-2 h-2 rounded-full bg-gray-400 transition-colors" onclick="goToComic(1)"></button>
+                <button class="comic-dot w-2 h-2 rounded-full bg-gray-400 transition-colors" onclick="goToComic(2)"></button>
+                <button class="comic-dot w-2 h-2 rounded-full bg-gray-400 transition-colors" onclick="goToComic(3)"></button>
+                <button class="comic-dot w-2 h-2 rounded-full bg-gray-400 transition-colors" onclick="goToComic(4)"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2.2: YouTube Shorts 短影音宣傳 -->
+        <div class="flex flex-col md:flex-row-reverse gap-10 items-center w-full">
+          <div class="md:w-1/2 flex flex-col justify-center">
+            <h3 class="text-2xl font-bold mb-4">深入校園的 Shorts 短影音企劃</h3>
+            <p class="text-gray-700 leading-relaxed font-medium mb-6">
+              除了靜態的圖文，我也運用了時下流行的短影音節奏與迷因元素，策劃並剪輯多支 YouTube Shorts。透過校園實地街訪與輕鬆有趣的互動形式，不僅拉近了品牌與學生的距離，更大幅提升了實體博覽會的社群討論度。
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="text-xs bg-green-100 text-green-800 font-bold px-2 py-1 rounded border border-green-300">#短影音宣傳</span>
+              
+            </div>
+            
+            <a href="https://www.youtube.com/shorts/eqG-nr2e-OU" target="_blank" class="inline-flex items-center space-x-2 bg-black text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-red-600 transition-colors w-max">
+              <i data-lucide="youtube" class="w-4 h-4"></i>
+              <span>在 YouTube 上觀看短影音</span>
+            </a>
+          </div>
+          
+          <!-- 手機外框 YouTube Shorts 內嵌 -->
+          <div class="md:w-1/2 w-full flex justify-center">
+            <div class="w-full max-w-[300px] flex-shrink-0">
+              <div class="bg-black rounded-[2.5rem] border-[6px] border-black shadow-[8px_8px_0_0_rgba(0,0,0,1)] overflow-hidden relative aspect-[9/16]">
+                <!-- 手機瀏海裝飾 -->
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-5 bg-black rounded-b-xl z-20 pointer-events-none"></div>
+                
+                <!-- YouTube Shorts 嵌入 iframe (請更換 YOUR_SHORT_ID_HERE) -->
+                <!-- 使用 youtube.com/embed/ID 即可正確嵌入並維持 iframe 比例 -->
+                <iframe 
+                  class="absolute inset-0 w-full h-full z-10 bg-black" 
+                  src="https://www.youtube.com/embed/eqG-nr2e-OU" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+                
+                <div class="absolute inset-0 flex flex-col items-center justify-center bg-gray-200 text-gray-500 font-bold z-0">
+                  <i data-lucide="youtube" class="w-8 h-8 mb-2"></i>
+                  <span>[Cake Shorts 宣傳]</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Section 3: Offline Event & Booth Design -->
+      <div class="flex flex-col md:flex-row gap-8 items-start pt-8 border-t border-gray-300">
+        <div class="md:w-1/3 flex flex-col">
+          <div class="flex items-center space-x-2 border-b-2 border-black pb-2 mb-4">
+            <i data-lucide="map-pin" class="w-5 h-5 text-red-500"></i>
+            <h2 class="text-xl font-black tracking-widest">線下實體活動</h2>
+          </div>
+        </div>
+        <div class="md:w-2/3">
+          <h3 class="text-2xl font-bold mb-4">校園徵才博覽會：攤位視覺與實體互動</h3>
+          <p class="text-gray-700 leading-relaxed font-medium mb-8">
+            在中正大學徵才博覽會的現場，我負責統籌「校園大使推廣攤位」的各項視覺物與互動道具。包含詳細的攤位位置圖地圖繪製、推廣服務背板（履歷編輯器、職缺專區等），以及多款用於現場拍照打卡的「手舉牌」。
+          </p>
+          
+          <!-- Image Grid (2 columns) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- Grid Item 1 (Booth Visuals) -->
+            <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-3">
+              <div class="bg-gray-100 aspect-square rounded-lg border border-gray-300 flex flex-col items-center justify-center text-gray-500 font-bold text-sm text-center px-4 relative overflow-hidden">
+                <img src="img/cakepost/06.jpg" alt="攤位資訊看板設計" class="absolute inset-0 w-full h-full object-cover z-10">
+                <i data-lucide="image" class="w-6 h-6 mb-2 relative z-0 text-gray-400"></i>
+                <span class="relative z-0">[攤位位置圖與<br/>宣傳看板設計]</span>
+              </div>
+            </div>
+            <!-- Grid Item 2 (Handheld signs / Group Photo) -->
+            <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-3">
+              <div class="bg-gray-100 aspect-square rounded-lg border border-gray-300 flex flex-col items-center justify-center text-gray-500 font-bold text-sm text-center px-4 relative overflow-hidden">
+                <img src="img/cakepost/07.jpg" alt="攤位資訊看板設計" class="absolute inset-0 w-full h-full object-cover z-10">
+                <i data-lucide="image" class="w-6 h-6 mb-2 relative z-0 text-gray-400"></i>
+                <span class="relative z-0">[打卡手舉牌設計與<br/>活動現場照片]</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 text-xs text-gray-500 font-bold px-2">
+            ▲ 左：結合品牌綠色的攤位功能介紹背板；右：製作「CakeResume 校園大使」、「WEB TOON」等趣味手舉牌吸引學生合影。
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- --- PROJECT NAVIGATION (Next/Prev) --- -->
+  <section class="border-y border-base-dark">
+    <!-- 下一個專案連結回首頁 -->
+    <a href="index.html#works" class="block w-full group relative overflow-hidden">
+      <!-- Background Hover Effect -->
+      <div class="absolute inset-0 bg-[#FDFBF7] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0"></div>
+      
+      <div class="px-6 py-16 md:py-24 text-center relative z-10 flex flex-col items-center justify-center">
+        <span class="text-sm font-bold tracking-widest text-gray-500 mb-4 group-hover:text-black transition-colors">BACK TO</span>
+        <h2 class="text-3xl md:text-5xl font-black tracking-tighter text-black flex items-center gap-4">
+          查看更多專案作品
+          <i data-lucide="arrow-right" class="w-8 h-8 md:w-12 md:h-12 group-hover:translate-x-4 transition-transform duration-300"></i>
+        </h2>
+      </div>
+    </a>
+  </section>
+
+ <!-- --- FOOTER / CONTACT --- -->
+  <footer id="contact" class="bg-[#1A1A1A] text-white py-16 px-6 border-t-[16px] border-[#FFF]">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-end gap-8">
+      <div class="text-center md:text-left">
+        <h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-4">₍₍◝(°꒳°*)◜₎₎</h2>
+        <p class="text-gray-400 font-medium max-w-sm mb-6">
+          正在尋找具備行銷思維與設計美學的視覺人才嗎？歡迎隨時與我聯繫！
+        </p>
+        <a href="https://reurl.cc/grZooR" class="inline-flex items-center space-x-2 bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-yellow-300 transition-colors">
+          <i class="fa-solid fa-download"></i>
+          <span>作品集PDF下載</span>
+        </a>
+      </div>
+      
+      <div class="flex flex-col items-center md:items-end space-y-4">
+        <div class="flex space-x-4">
+          
+        </div>
+        <div class="text-xs text-gray-500 tracking-widest uppercase font-bold">
+          © 2026 莊淳翔 Yoruei Chuang. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Initialize Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+
+    // === Comic Carousel Logic (圖文漫畫自動輪播控制) ===
+    let currentComic = 0;
+    const comicTrack = document.getElementById('comic-track');
+    // 動態取得軌道內的圖片數量，不受限於寫死的數字
+    const totalComics = comicTrack ? comicTrack.children.length : 0; 
+    const comicDots = document.querySelectorAll('.comic-dot');
+    let comicInterval;
+
+    function updateComicCarousel() {
+      if (!comicTrack || totalComics === 0) return;
+      comicTrack.style.transform = `translateX(-${currentComic * 100}%)`;
+      comicDots.forEach((dot, index) => {
+        if (index === currentComic) {
+          dot.classList.add('bg-black');
+          dot.classList.remove('bg-gray-400');
+        } else {
+          dot.classList.remove('bg-black');
+          dot.classList.add('bg-gray-400');
+        }
+      });
+    }
+
+    function nextComic() {
+      if (totalComics === 0) return;
+      currentComic = (currentComic + 1) % totalComics;
+      updateComicCarousel();
+    }
+
+    function prevComic() {
+      if (totalComics === 0) return;
+      currentComic = (currentComic - 1 + totalComics) % totalComics;
+      updateComicCarousel();
+    }
+
+    function goToComic(index) {
+      if (index >= 0 && index < totalComics) {
+        currentComic = index;
+        updateComicCarousel();
+      }
+    }
+
+    // 每 3.5 秒自動切換幻燈片
+    if (totalComics > 0) {
+      comicInterval = setInterval(nextComic, 3500);
+
+      // 當滑鼠移入時暫停，移開時繼續
+      const comicContainer = document.getElementById('comic-carousel');
+      if (comicContainer) {
+        comicContainer.addEventListener('mouseenter', () => clearInterval(comicInterval));
+        comicContainer.addEventListener('mouseleave', () => {
+          comicInterval = setInterval(nextComic, 3500);
+        });
+      }
+    }
+  </script>
+</body>
+</html>

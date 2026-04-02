@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>專案展示 | 公共電視《公視購》 - 莊淳翔</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom CSS -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .bg-base { background-color: #FDFBF7; }
+    .text-base-dark { color: #1A1A1A; }
+    .border-base-dark { border-color: #1A1A1A; }
+    
+    /* Instagram 漸層背景 */
+    .ig-gradient {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+  </style>
+</head>
+<body class="bg-base text-base-dark font-sans min-h-screen relative overflow-x-hidden selection:bg-yellow-300 selection:text-black">
+
+  <!-- --- HEADER (置頂導覽列) --- -->
+  <header class="flex flex-col md:flex-row justify-between items-center px-6 py-4 border-b border-base-dark bg-white/95 backdrop-blur-md sticky top-0 z-50 gap-4 md:gap-0">
+    <div class="flex flex-col text-center md:text-left">
+      <h1 class="text-xl font-black tracking-tighter leading-none">莊淳翔 / 作品集 PORTFOLIO</h1>
+    </div>
+
+    <!-- 常駐導覽列 -->
+    <nav class="flex items-center space-x-6 font-bold text-xs md:text-sm tracking-widest">
+      <a href="index.html" class="flex items-center space-x-1 hover:text-blue-600 transition-colors">
+        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+        <span>返回首頁</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- --- PROJECT HERO SECTION --- -->
+  <section class="relative px-6 py-12 md:py-20 border-b border-base-dark overflow-hidden bg-[#EE8B7F]">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10 items-center">
+      
+      <!-- Left: Project Title & Meta -->
+      <div class="lg:col-span-5 flex flex-col justify-center">
+        <div class="inline-block bg-white px-3 py-1 rounded-full text-xs mb-6 font-bold border border-black w-max shadow-sm">
+          社群行銷 × IP設計
+        </div>
+        
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-[1.1] mb-6 text-black">
+          公共電視<br/>《公視購》平台<br/>品牌推廣與視覺
+        </h1>
+        
+        <p class="text-sm md:text-base leading-relaxed font-bold mb-8 max-w-md text-gray-900 opacity-90">
+          於公視數位內容部實習期間，負責旗下電商平台《公視購》的社群視覺重塑，並操刀原創 IP 吉祥物「小GO」的誕生與應用。
+        </p>
+
+        <!-- Meta Info -->
+        <div class="grid grid-cols-2 gap-4 border-t-2 border-black pt-6">
+          <div>
+            <div class="text-[10px] text-black font-bold tracking-widest uppercase mb-1 opacity-70">職位</div>
+            <div class="text-sm font-bold">社群企劃、視覺設計師</div>
+          </div>
+          <div>
+            <div class="text-[10px] text-black font-bold tracking-widest uppercase mb-1 opacity-70">時間</div>
+            <div class="text-sm font-bold">2024.07 - 2024.08</div>
+          </div>
+          <div class="col-span-2">
+            <div class="text-[10px] text-black font-bold tracking-widest uppercase mb-1 opacity-70">技能</div>
+            <div class="flex flex-wrap gap-2 mt-1">
+              <span class="text-xs bg-black text-white px-2 py-1 rounded font-bold">Illustrator</span>
+              <span class="text-xs bg-black text-white px-2 py-1 rounded font-bold">Photoshop</span>
+              <span class="text-xs bg-black text-white px-2 py-1 rounded font-bold">Premiere Pro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Main Hero Image -->
+      <div class="lg:col-span-7">
+        <div class="bg-white rounded-2xl border-2 border-black shadow-[8px_8px_0_0_rgba(0,0,0,1)] aspect-[4/3] lg:aspect-video flex items-center justify-center p-4 relative overflow-hidden transform md:-rotate-2 transition-transform hover:rotate-0 duration-500">
+          <!-- 圖片展示框 (實線邊框) -->
+          <div class="w-full h-full border border-black rounded-lg flex flex-col items-center justify-center text-gray-500 font-bold bg-gray-50 text-sm relative overflow-hidden group">
+            
+            <img src="img/pts_01.jpg" alt="公視購專案主視覺" class="absolute inset-0 w-full h-full object-cover z-10 transition-transform group-hover:scale-105 duration-500">
+
+            <i data-lucide="image" class="w-10 h-10 mb-2 relative z-0"></i>
+            <span class="relative z-0 text-center">[公視購專案主視覺 /  mockup 大圖]</span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- --- PROJECT CONTENT --- -->
+  <section class="py-16 md:py-24 px-6 bg-base">
+    <div class="max-w-4xl mx-auto space-y-20">
+
+      <!-- Section 1: Overview -->
+      <div class="flex flex-col md:flex-row gap-8 items-start">
+        <div class="md:w-1/3 flex flex-col">
+          <div class="flex items-center space-x-2 border-b-2 border-black pb-2 mb-4">
+            <i data-lucide="target" class="w-5 h-5 text-red-500"></i>
+            <h2 class="text-xl font-black tracking-widest">專案介紹</h2>
+          </div>
+        </div>
+        <div class="md:w-2/3">
+          <h3 class="text-2xl font-bold mb-4">活化官方電商，拉近與年輕世代的距離</h3>
+          <p class="text-gray-700 leading-relaxed font-medium mb-4">
+            《公視購》作為公共電視的官方周邊商品與影音出版品販售平台，面臨到受眾年齡層偏高、社群互動率較低的問題。在為期兩個月的實習專案中，我的首要任務是透過<b>全新的視覺語彙</b>與<b>生動的社群企劃</b>，提升品牌在年輕族群中的曝光度與好感度。
+          </p>
+          <p class="text-gray-700 leading-relaxed font-medium">
+            為此，我提出了「品牌 IP 化」的策略，期望透過具體的角色形象，軟化官方平台的刻板印象，並將其廣泛應用於日常貼文、限時動態以及實體周邊提案中。
+          </p>
+        </div>
+      </div>
+
+      <!-- Section 2: IP Design -->
+      <div class="flex flex-col md:flex-row gap-8 items-start">
+        <div class="md:w-1/3 flex flex-col">
+          <div class="flex items-center space-x-2 border-b-2 border-black pb-2 mb-4">
+            <i data-lucide="pen-tool" class="w-5 h-5 text-blue-500"></i>
+            <h2 class="text-xl font-black tracking-widest">IP 設計</h2>
+          </div>
+        </div>
+        <div class="md:w-2/3">
+          <h3 class="text-2xl font-bold mb-4">原創吉祥物「小GO」的誕生</h3>
+          <p class="text-gray-700 leading-relaxed font-medium mb-8">
+            結合了「購物車」、「電視機」與「親和力」三個核心元素，我在實習時的練習專案中嘗試設計出了吉祥物「小GO」。外型採用圓潤的線條搭配公視經典色系，使其具備極高的辨識度。
+          </p>
+          
+          <!-- Image Card -->
+          <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-4 group">
+            <!-- 圖片展示框 (實線邊框) -->
+            <div class="bg-gray-50 w-full aspect-video rounded-lg border border-black flex flex-col items-center justify-center text-gray-500 font-bold relative overflow-hidden">
+              
+              <img src="img/ptsgo_01.jpg" alt="小GO角色設計圖" class="absolute inset-0 w-full h-full object-contain p-4 z-10 transition-transform group-hover:scale-105 duration-500">
+
+              <i data-lucide="brush" class="w-8 h-8 mb-2 relative z-0"></i>
+              <span class="relative z-0 text-center">[小GO 角色設計圖/三視圖/表情包]</span>
+            </div>
+            <div class="mt-4 text-xs text-gray-500 font-bold px-2">
+              ▲ 「小GO」角色設定草圖與完稿展示，針對社群互動設計多種情境姿態。
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Social Media Execution -->
+      <div class="flex flex-col md:flex-row gap-8 items-start">
+        <div class="md:w-1/3 flex flex-col">
+          <div class="flex items-center space-x-2 border-b-2 border-black pb-2 mb-4">
+            <i data-lucide="smartphone" class="w-5 h-5 text-green-500"></i>
+            <h2 class="text-xl font-black tracking-widest">社群行銷內容</h2>
+          </div>
+        </div>
+        <div class="md:w-2/3">
+          <h3 class="text-2xl font-bold mb-4">吸睛的圖文排版與 Reels 短影音</h3>
+          <p class="text-gray-700 leading-relaxed font-medium mb-8">
+            除了 IP 設計，我也負責平台日常的貼文產出。打破以往純商品去背圖的排版，我引入了資訊圖表 (Infographic)、雜誌風排版，以及結合時事迷因的 Reels 短影音剪輯，讓促銷資訊變得更容易被分享。
+          </p>
+          
+          <!-- Image Grid (2 columns) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- Grid Item 1 -->
+            <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-3 group">
+              <!-- 圖片展示框 (實線邊框) -->
+              <div class="bg-gray-50 w-full aspect-square rounded-lg border border-black flex flex-col items-center justify-center text-gray-500 font-bold text-sm text-center px-4 relative overflow-hidden">
+                
+                 <img src="img/ptsgo_02.png" alt="IG貼文排版 Mockup A" class="absolute inset-0 w-full h-full object-cover z-10 transition-transform group-hover:scale-105 duration-500">
+
+                <i data-lucide="image" class="w-6 h-6 mb-2 relative z-0"></i>
+                <span class="relative z-0">[IG 貼文排版 Mockup A]</span>
+              </div>
+            </div>
+            <!-- Grid Item 2 -->
+            <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-3 group">
+              <!-- 圖片展示框 (實線邊框) -->
+              <div class="bg-gray-50 w-full aspect-square rounded-lg border border-black flex flex-col items-center justify-center text-gray-500 font-bold text-sm text-center px-4 relative overflow-hidden">
+                
+                <img src="img/ptsgo_03.jpg" alt="Reels短影音封面" class="absolute inset-0 w-full h-full object-cover z-10 transition-transform group-hover:scale-105 duration-500">
+
+                <i data-lucide="video" class="w-6 h-6 mb-2 relative z-0"></i>
+                <span class="relative z-0">[Reels 短影音封面/截圖 B]</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 text-xs text-gray-500 font-bold px-2">
+            ▲ 左：結合 IP 的大促銷活動貼文；右：介紹公視經典影集周邊的開箱短影音。
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- --- PROJECT NAVIGATION (Next/Prev) --- -->
+  <section class="border-y border-base-dark">
+    <!-- 下一個專案連結回首頁 -->
+    <a href="index.html#works" class="block w-full group relative overflow-hidden">
+      <!-- Background Hover Effect -->
+      <div class="absolute inset-0 bg-[#FDFBF7] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0"></div>
+      
+      <div class="px-6 py-16 md:py-24 text-center relative z-10 flex flex-col items-center justify-center">
+        <span class="text-sm font-bold tracking-widest text-gray-500 mb-4 group-hover:text-black transition-colors">BACK TO</span>
+        <h2 class="text-3xl md:text-5xl font-black tracking-tighter text-black flex items-center gap-4">
+          查看更多專案作品
+          <i data-lucide="arrow-right" class="w-8 h-8 md:w-12 md:h-12 group-hover:translate-x-4 transition-transform duration-300"></i>
+        </h2>
+      </div>
+    </a>
+  </section>
+
+  <!-- --- FOOTER / CONTACT --- -->
+  <footer id="contact" class="bg-[#1A1A1A] text-white py-16 px-6 border-t-[16px] border-[#FFF]">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-end gap-8">
+      <div class="text-center md:text-left">
+        <h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-4">₍₍◝(°꒳°*)◜₎₎</h2>
+        <p class="text-gray-400 font-medium max-w-sm mb-6">
+          正在尋找具備行銷思維與設計美學的視覺人才嗎？歡迎隨時與我聯繫！
+        </p>
+        <a href="https://reurl.cc/grZooR" class="inline-flex items-center space-x-2 bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-yellow-300 transition-colors">
+          <i class="fa-solid fa-download"></i>
+          <span>作品集PDF下載</span>
+        </a>
+      </div>
+      
+      <div class="flex flex-col items-center md:items-end space-y-4">
+        <div class="flex space-x-4">
+          
+        </div>
+        <div class="text-xs text-gray-500 tracking-widest uppercase font-bold">
+          © 2026 莊淳翔 Yoruei Chuang. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Initialize Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

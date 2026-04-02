@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>莊淳翔 | 行銷傳播與視覺設計作品集</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px; /* 避免導覽列遮擋標題 */
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-100%); }
+    }
+    .animate-marquee {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 30s linear infinite;
+    }
+    .animate-marquee-slow {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 40s linear infinite;
+    }
+    .bg-base { background-color: #FDFBF7; }
+    .text-base-dark { color: #1A1A1A; }
+    .border-base-dark { border-color: #1A1A1A; }
+    
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    
+    /* Instagram 漸層背景 */
+    .ig-gradient {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+  </style>
+</head>
+<body class="bg-base text-base-dark font-sans min-h-screen relative overflow-x-hidden selection:bg-yellow-300 selection:text-black">
+
+  <!-- --- HEADER (置頂導覽列) --- -->
+  <header class="flex flex-col md:flex-row justify-between items-center px-6 py-4 border-b border-base-dark bg-white/95 backdrop-blur-md sticky top-0 z-50 gap-4 md:gap-0">
+    <div class="flex flex-col text-center md:text-left">
+      <h1 class="text-xl font-black tracking-tighter leading-none">莊淳翔 / 作品集 PORTFOLIO</h1>
+    </div>
+
+    <!-- 常駐導覽列 -->
+    <nav class="flex items-center space-x-6 md:space-x-8 font-bold text-xs md:text-sm tracking-widest">
+      <a href="#about" class="hover:text-blue-600 transition-colors">關於我</a>
+      <a href="#skills" class="hover:text-blue-600 transition-colors">專業技能</a>
+      <a href="#experience" class="hover:text-blue-600 transition-colors">經歷</a>
+      <a href="#works" class="hover:text-blue-600 transition-colors">作品／專案</a>
+    </nav>
+  </header>
+
+  <!-- --- MARQUEE --- -->
+  <div class="border-b border-base-dark overflow-hidden py-2 bg-[#1A1A1A] text-white text-xs tracking-widest uppercase">
+    <div class="whitespace-nowrap">
+      <span class="animate-marquee">
+        MARKETING COMMUNICATION / GRAPHIC DESIGN / VIDEO EDITING / WEB DESIGN / SOCIAL MEDIA / MARKETING COMMUNICATION / GRAPHIC DESIGN / VIDEO EDITING / WEB DESIGN / SOCIAL MEDIA /
+      </span>
+      <span class="animate-marquee" aria-hidden="true">
+        MARKETING COMMUNICATION / GRAPHIC DESIGN / VIDEO EDITING / WEB DESIGN / SOCIAL MEDIA / MARKETING COMMUNICATION / GRAPHIC DESIGN / VIDEO EDITING / WEB DESIGN / SOCIAL MEDIA /
+      </span>
+    </div>
+  </div>
+
+  <!-- --- HERO / ABOUT SECTION --- -->
+  <section id="about" class="relative px-6 py-16 md:py-24 border-b border-base-dark overflow-hidden bg-base">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 relative z-10">
+      
+      <!-- Left Column: Intro -->
+      <div class="md:col-span-5 flex flex-col justify-center">
+        
+        <!-- 大頭貼與招呼語區塊 -->
+        <div class="flex items-center space-x-5 mb-8">
+          <!-- 大頭貼 (在此替換圖片 src) -->
+          <div class="w-24 h-24 md:w-28 md:h-28 rounded-full border-2 border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] overflow-hidden bg-white flex-shrink-0 relative group">
+             <!-- 請將下方 src 的值替換為您的大頭貼圖片路徑 -->
+             <img src="img/avatar.jpg" alt="莊淳翔 Profile" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          </div>
+          
+          <!-- 招呼語 -->
+          <div>
+            <div class="flex items-center space-x-2">
+              <h2 class="text-xl md:text-2xl font-bold tracking-wide">你好, 我是淳翔！</h2>
+            </div>
+            
+          </div>
+        </div>
+        
+        <h1 class="text-3xl md:text-3xl font-black tracking-tighter leading-[1.1] mb-6">
+          平面設計
+          <span class="text-2xl md:text-1xl font-light mx-2 text-gray-400">×</span>
+          影音剪輯
+          <span class="text-2xl md:text-1xl font-light mx-2 text-gray-400">×</span>
+          行銷傳播
+        </h1>
+        
+        <p class="text-sm md:text-base leading-relaxed font-medium mb-6 max-w-md text-gray-700">
+          我具備傳播學系背景，目前就讀於國立中山大學行銷傳播管理研究所。 我將「行銷管理」與「視覺傳播」的知識跨領域結合，無論是平面視覺、影音剪輯、社群圖文到行銷執行，我致力於產出具影響力與美感的數位內容。
+        </p>
+
+        <!-- 聯絡方式與社群連結 -->
+        <div class="flex flex-wrap items-center gap-3 mb-8">
+          <a href="mailto:yoruei01@gmail.com" class="flex items-center space-x-2 bg-black text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-blue-600 transition-colors shadow-sm">
+            <i data-lucide="mail" class="w-4 h-4"></i>
+            <span>yoruei01@gmail.com</span>
+          </a>
+          <!-- 開啟新視窗的 IG 連結 1 (@yoruei01) -->
+          <a href="https://www.instagram.com/yoruei01/" target="_blank" rel="noopener noreferrer" class="group relative overflow-hidden flex items-center space-x-1.5 px-3 py-2 rounded-full border-2 border-black text-black transition-colors shadow-sm text-sm font-bold" title="個人 Instagram">
+            <div class="absolute inset-0 ig-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 relative z-10 group-hover:text-white transition-colors"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+            <span class="relative z-10 group-hover:text-white transition-colors">@yoruei01</span>
+          </a>
+          <!-- 開啟新視窗的 IG 連結 2 (@yoruei.art) -->
+          <a href="https://www.instagram.com/yoruei.art/" target="_blank" rel="noopener noreferrer" class="group relative overflow-hidden flex items-center space-x-1.5 px-3 py-2 rounded-full border-2 border-black text-black transition-colors shadow-sm text-sm font-bold" title="作品 Instagram">
+            <div class="absolute inset-0 ig-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 relative z-10 group-hover:text-white transition-colors"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+            <span class="relative z-10 group-hover:text-white transition-colors">@yoruei.art</span>
+          </a>
+        </div>
+
+        <!-- 學歷與語言 -->
+        <div class="flex flex-col gap-3 mb-8 border-l-2 border-black pl-4">
+          <div class="text-sm">
+            <span class="font-bold bg-black text-white px-2 py-0.5 text-xs mr-2">碩士</span> 國立中山大學 行銷傳播管理研究所
+          </div>
+          <div class="text-sm">
+            <span class="font-bold bg-gray-200 text-black px-2 py-0.5 text-xs mr-2">學士</span> 國立中正大學 傳播學系
+          </div>
+          <div class="text-sm text-gray-600 mt-2 font-bold">
+            <i data-lucide="globe" class="w-4 h-4 inline-block mr-1 -mt-1"></i> TOEIC 720分 | JLPT N2 日語能力
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Featured Project (Carousel 輪播 - 圖片上 / 文字下) -->
+      <div class="md:col-span-7 flex flex-col">
+        <div class="flex items-center space-x-4 mb-4">
+          <i data-lucide="monitor-play" class="w-5 h-5 text-black-600"></i>
+          <h3 class="font-bold tracking-widest text-sm">近期參與作品 / 專案</h3>
+        </div>
+
+        <!-- 輪播容器 (設定高度 66vh，約為版面三分之二) -->
+        <div id="carousel-container" class="relative group cursor-pointer rounded-2xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] overflow-hidden bg-white w-full h-[60vh] md:h-[66vh] min-h-[500px]">
+          
+          <!-- 輪播軌道 -->
+          <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out h-full">
+            
+            <!-- Slide 1: 公視購 -->
+            <div class="carousel-slide min-w-full flex flex-col h-full bg-white">
+              <a href="cake.html" class="flex flex-col h-full cursor-pointer hover:opacity-95 transition-opacity">
+                <!-- 圖片區域 (上) -->
+                <div class="h-[55%] w-full bg-[#EE8B7F] border-b border-black flex items-center justify-center p-6 relative overflow-hidden">
+                  <!-- ▼ 圖片展示框 (實線邊框) ▼ -->
+                  <div class="w-full h-full border border-black rounded-lg flex flex-col items-center justify-center text-gray-800 font-bold bg-white/40 transition-transform hover:scale-105 duration-500 relative overflow-hidden">
+                    
+                    <img src="img/cake_01.JPG" alt="小GO設計圖" class="absolute inset-0 w-full h-full object-cover z-10">
+                  </div>
+                </div>
+                <!-- 文字區域 (下) -->
+                <div class="h-[45%] w-full p-6 md:px-10 flex flex-col justify-center pb-12">
+                  <span class="inline-block bg-gray-100 px-3 py-1 rounded-full text-[10px] md:text-xs mb-3 font-bold border border-black w-max">行銷專案與社群經營</span>
+                  <h4 class="text-xl md:text-2xl lg:text-3xl font-black leading-tight mb-2 text-black">Cake 2024 校園大使<br/>社群圖文與短影音行銷</h4>
+                  <p class="text-xs md:text-sm font-medium line-clamp-3 text-gray-600">
+                    負責校園社群推廣行銷（包含短影音企劃與貼文圖文製作），並於校內舉辦實體宣傳活動。
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Slide 2: 中正E報 -->
+            <div class="carousel-slide min-w-full flex flex-col h-full bg-white">
+              <a href="ptsgo.html" class="flex flex-col h-full cursor-pointer hover:opacity-95 transition-opacity">
+                <!-- 圖片區域 (上) -->
+                <div class="h-[55%] w-full bg-[#E8F0FE] border-b border-black flex items-center justify-center p-6 relative overflow-hidden">
+                  <!-- ▼ 圖片展示框 (實線邊框) ▼ -->
+                  <div class="w-full h-full border border-black rounded-lg flex flex-col items-center justify-center text-gray-800 font-bold bg-white/40 transition-transform hover:scale-105 duration-500 relative overflow-hidden">
+                    
+                    <img src="img/pts_01.jpg" alt="專題影音截圖" class="absolute inset-0 w-full h-full object-cover z-10">
+                  </div>
+                </div>
+                <!-- 文字區域 (下) -->
+                <div class="h-[45%] w-full p-6 md:px-10 flex flex-col justify-center pb-12">
+                  <span class="inline-block bg-gray-100 px-3 py-1 rounded-full text-[10px] md:text-xs mb-3 font-bold border border-black w-max">IP設計與社群視覺</span>
+                  <h4 class="text-xl md:text-2xl lg:text-3xl font-black leading-tight mb-2 text-black">公共電視《公視購》暑期實習<br/>社群圖文行銷</h4>
+                  <p class="text-xs md:text-sm font-medium line-clamp-3 text-gray-600">
+                    於公視數位內容部實習期間，參與其電商平台《公視購》的社群圖文製作，並試作原創 IP 吉祥物 「小GO」 的設計與Guidebook。
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <!-- Slide 3: 研討會 -->
+            <div class="carousel-slide min-w-full flex flex-col h-full bg-white">
+              <a href="reels.html" class="flex flex-col h-full cursor-pointer hover:opacity-95 transition-opacity">
+                <!-- 圖片區域 (上) -->
+                <div class="h-[55%] w-full bg-[#FCE8E6] border-b border-black flex items-center justify-center p-6 relative overflow-hidden">
+                  <!-- ▼ 圖片展示框 (實線邊框) ▼ -->
+                  <div class="w-full h-full border border-black rounded-lg flex flex-col items-center justify-center text-gray-800 font-bold bg-white/40 transition-transform hover:scale-105 duration-500 relative overflow-hidden">
+                    
+                    <img src="img/reels_01.jpg" alt="研討會主視覺" class="absolute inset-0 w-full h-full object-cover z-10"> 
+                  </div>
+                </div>
+                <!-- 文字區域 (下) -->
+                <div class="h-[45%] w-full p-6 md:px-10 flex flex-col justify-center pb-12">
+                  <span class="inline-block bg-gray-100 px-3 py-1 rounded-full text-[10px] md:text-xs mb-3 font-bold border border-black w-max">社群行銷與短影音剪輯</span>
+                  <h4 class="text-xl md:text-2xl lg:text-3xl font-black leading-tight mb-2 text-black">影集《向流星許願的我們》、FOCASA《幾米男孩的 100 次勇敢》社群Reels剪輯</h4>
+                  <p class="text-xs md:text-sm font-medium line-clamp-3 text-gray-600">
+                    負責影集與展演專案的精華片段挑選與 Reels 剪輯，有效提升社群曝光度 。
+                  </p>
+                </div>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- 輪播導覽點 (Dots) -->
+          <div class="absolute bottom-5 left-1/2 -translate-x-1/2 flex space-x-3 z-20">
+            <button class="carousel-dot w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-black transition-colors" onclick="goToSlide(0)"></button>
+            <button class="carousel-dot w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors" onclick="goToSlide(1)"></button>
+            <button class="carousel-dot w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-gray-300 hover:bg-gray-400 transition-colors" onclick="goToSlide(2)"></button>
+          </div>
+          
+          <!-- 輪播左右箭頭 -->
+          <button class="absolute left-4 top-[27.5%] md:top-1/4 -translate-y-1/2 w-10 h-10 bg-white/90 backdrop-blur border border-black rounded-full flex items-center justify-center z-20 hover:bg-white hover:scale-105 shadow-sm opacity-0 group-hover:opacity-100 transition-all" onclick="prevSlide(event)">
+            <i data-lucide="chevron-left" class="w-5 h-5 text-black"></i>
+          </button>
+          <button class="absolute right-4 top-[27.5%] md:top-1/4 -translate-y-1/2 w-10 h-10 bg-white/90 backdrop-blur border border-black rounded-full flex items-center justify-center z-20 hover:bg-white hover:scale-105 shadow-sm opacity-0 group-hover:opacity-100 transition-all" onclick="nextSlide(event)">
+            <i data-lucide="chevron-right" class="w-5 h-5 text-black"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- SKILLS SECTION --- -->
+  <section id="skills" class="py-16 px-6 border-b border-base-dark bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center space-x-2 border-b-2 border-black pb-4 mb-10">
+        <i class="fa-solid fa-hashtag text-2xl text-black-500"></i>
+        <h2 class="text-2xl font-black tracking-widest">專業技能</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Skill 1 -->
+        <div class="border border-black p-6 rounded-xl bg-[#FDFBF7] hover:bg-[#E8F0FE] transition-colors">
+          <i data-lucide="pen-tool" class="w-8 h-8 mb-4"></i>
+          <h3 class="text-lg font-bold mb-2">平面與視覺設計</h3>
+          <p class="text-sm text-gray-600 mb-4">活動主視覺、海報、社群圖文、三折頁、名牌與周邊紀念品設計。</p>
+          <div class="flex flex-wrap gap-1">
+            <span class="text-[10px] bg-black text-white px-2 py-1 rounded">Illustrator</span>
+            <span class="text-[10px] bg-black text-white px-2 py-1 rounded">Photoshop</span>
+            <span class="text-[10px] bg-black text-white px-2 py-1 rounded">InDesign</span>
+          </div>
+        </div>
+        <!-- Skill 2 -->
+        <div class="border border-black p-6 rounded-xl bg-[#FDFBF7] hover:bg-[#FCE8E6] transition-colors">
+          <i data-lucide="video" class="w-8 h-8 mb-4"></i>
+          <h3 class="text-lg font-bold mb-2">影音企劃與剪輯</h3>
+          <p class="text-sm text-gray-600 mb-4">新聞影音專題採訪、短影音製作 (Reels)、講座長片多機剪輯。</p>
+          <div class="flex flex-wrap gap-1">
+            <span class="text-[10px] bg-black text-white px-2 py-1 rounded">Premiere Pro</span>
+            <span class="text-[10px] bg-black text-white px-2 py-1 rounded">DaVinci Resolve</span>
+          </div>
+        </div>
+        
+        <!-- Skill 4 -->
+        <div class="border border-black p-6 rounded-xl bg-[#FDFBF7] hover:bg-[#FFF3E0] transition-colors">
+          <i data-lucide="megaphone" class="w-8 h-8 mb-4"></i>
+          <h3 class="text-lg font-bold mb-2">行銷企劃與文書</h3>
+          <p class="text-sm text-gray-600 mb-4">社群經營推廣、校園活動舉辦、行政庶務與新聞採訪編輯。</p>
+          <div class="flex flex-wrap gap-1">
+            <span class="text-[10px] bg-black text-white px-2 py-1 rounded">Word / Excel / PPT</span>
+            <span class="text-[10px] bg-black text-white px-2 py-1 rounded">社群經營</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- EXPERIENCE SECTION --- -->
+  <section id="experience" class="py-16 px-6 bg-base">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex items-center space-x-2 border-b-2 border-black pb-4 mb-10">
+        <i class="fa-solid fa-hashtag text-2xl text-black-500"></i>
+        <h2 class="text-2xl font-black tracking-widest">經歷</h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left: Summary Visuals -->
+        <div class="lg:col-span-4 space-y-6">
+          <div class="bg-[#1A1A1A] text-white p-8 rounded-2xl border border-black flex flex-col justify-center h-48">
+            <div class="text-5xl font-black mb-2">6+</div>
+            <div class="font-bold tracking-widest text-sm text-gray-400">專案經歷涵蓋</div>
+            <div class="text-sm mt-2 font-medium leading-relaxed">公廣集團實習、新創校園大使、獨立媒體採訪編輯、國際研討會籌備。</div>
+          </div>
+          <div class="bg-white p-8 rounded-2xl border border-black flex flex-col justify-center h-48">
+            <div class="text-5xl font-black mb-2 text-blue-600">20+</div>
+            <div class="font-bold tracking-widest text-sm text-gray-500">影音剪輯專案</div>
+            <div class="text-sm mt-2 font-medium leading-relaxed">累積剪輯超過 20 部演講座談影片，總處理時長超過 40 小時。</div>
+          </div>
+        </div>
+
+        <!-- Right: Timeline List -->
+        <div class="lg:col-span-8 flex flex-col">
+          <div class="border-t border-black">
+            
+            <!-- Experience 1 -->
+            <div class="py-6 border-b border-black group hover:bg-white transition-colors flex flex-col sm:flex-row gap-4 sm:items-start cursor-pointer px-4 -mx-4 rounded-lg">
+              <div class="w-40 flex-shrink-0 flex items-center space-x-2 mt-1">
+                <div class="w-3 h-3 bg-black rounded-full"></div>
+                <span class="text-xs font-bold whitespace-nowrap">2026.03 - 現在</span>
+              </div>
+              <div class="flex-1">
+                <h4 class="font-bold text-lg group-hover:text-blue-600 transition-colors">社群平台（Instagram）編輯</h4>
+                <div class="text-sm font-bold text-gray-600 mb-2">國立中山大學行銷傳播管理研究所</div>
+                <p class="text-sm text-gray-700 leading-relaxed">社群推廣行銷、圖文設計製作與發佈。</p>
+              </div>
+            </div>
+
+            <!-- Experience 1 -->
+            <div class="py-6 border-b border-black group hover:bg-white transition-colors flex flex-col sm:flex-row gap-4 sm:items-start cursor-pointer px-4 -mx-4 rounded-lg">
+              <div class="w-40 flex-shrink-0 flex items-center space-x-2 mt-1">
+                <div class="w-3 h-3 bg-black rounded-full"></div>
+                <span class="text-xs font-bold whitespace-nowrap">2024.09 - 2025.06</span>
+              </div>
+              <div class="flex-1">
+                <h4 class="font-bold text-lg group-hover:text-blue-600 transition-colors">大眾傳播社指導老師</h4>
+                <div class="text-sm font-bold text-gray-600 mb-2">嘉義縣私立協同中學</div>
+                <p class="text-sm text-gray-700 leading-relaxed">行銷、動態／靜態影像、平面設計社團課程授課。</p>
+              </div>
+            </div>
+
+            <!-- Experience 1 -->
+            <div class="py-6 border-b border-black group hover:bg-white transition-colors flex flex-col sm:flex-row gap-4 sm:items-start cursor-pointer px-4 -mx-4 rounded-lg">
+              <div class="w-40 flex-shrink-0 flex items-center space-x-2 mt-1">
+                <div class="w-3 h-3 bg-black rounded-full"></div>
+                <span class="text-xs font-bold whitespace-nowrap">2024.07 - 2024.08</span>
+              </div>
+              <div class="flex-1">
+                <h4 class="font-bold text-lg group-hover:text-blue-600 transition-colors">數位內容部節目發行組 實習生</h4>
+                <div class="text-sm font-bold text-gray-600 mb-2">財團法人公共電視文化事業基金會 (台北)</div>
+                <p class="text-sm text-gray-700 leading-relaxed">社群推廣行銷、圖文設計製作與發佈，以及公視購平台經營協助。</p>
+              </div>
+            </div>
+
+            <!-- Experience 2 -->
+            <div class="py-6 border-b border-black group hover:bg-white transition-colors flex flex-col sm:flex-row gap-4 sm:items-start cursor-pointer px-4 -mx-4 rounded-lg">
+              <div class="w-40 flex-shrink-0 flex items-center space-x-2 mt-1">
+                <div class="w-3 h-3 bg-black rounded-full"></div>
+                <span class="text-xs font-bold whitespace-nowrap">2024.02 - 2024.12</span>
+              </div>
+              <div class="flex-1">
+                <h4 class="font-bold text-lg group-hover:text-blue-600 transition-colors">校園大使</h4>
+                <div class="text-sm font-bold text-gray-600 mb-2">Cake 台灣 (川陀數位)</div>
+                <p class="text-sm text-gray-700 leading-relaxed">負責校園社群推廣行銷（包含短影音企劃與貼文圖文製作），並於校內舉辦實體宣傳活動。</p>
+              </div>
+            </div>
+
+            <!-- Experience 3 -->
+            <div class="py-6 border-b border-black group hover:bg-white transition-colors flex flex-col sm:flex-row gap-4 sm:items-start cursor-pointer px-4 -mx-4 rounded-lg">
+              <div class="w-40 flex-shrink-0 flex items-center space-x-2 mt-1">
+                <div class="w-3 h-3 bg-black rounded-full"></div>
+                <span class="text-xs font-bold whitespace-nowrap">2023.11 - 2024.04</span>
+              </div>
+              <div class="flex-1">
+                <h4 class="font-bold text-lg group-hover:text-blue-600 transition-colors">美術設計 / 網頁建置與維護</h4>
+                <div class="text-sm font-bold text-gray-600 mb-2">中正大學傳播學系 第十屆數位傳播國際學術研討會</div>
+                <p class="text-sm text-gray-700 leading-relaxed">設計活動主視覺、海報、背板、邀請函、名牌、桌牌、三折頁等實體文宣。製作社群平台宣傳圖，並獨立建置與維護活動官方網頁。</p>
+              </div>
+            </div>
+
+            <!-- Experience 4 -->
+            <div class="py-6 border-b border-black group hover:bg-white transition-colors flex flex-col sm:flex-row gap-4 sm:items-start cursor-pointer px-4 -mx-4 rounded-lg">
+              <div class="w-40 flex-shrink-0 flex items-center space-x-2 mt-1">
+                <div class="w-3 h-3 bg-black rounded-full"></div>
+                <span class="text-xs font-bold whitespace-nowrap">2023.08 - 2024.06</span>
+              </div>
+              <div class="flex-1">
+                <h4 class="font-bold text-lg group-hover:text-blue-600 transition-colors">總編輯 / 美術編輯 / 記者</h4>
+                <div class="text-sm font-bold text-gray-600 mb-2">中正大學實習媒體《中正E報》</div>
+                <p class="text-sm text-gray-700 leading-relaxed">擔任總編輯 2 個月，統合並領導實習記者製作新聞；擔任美術編輯 2 個月，設計新聞素材與整體視覺；擔任記者 4 個月，累積製作 13 則影音與文字新聞。</p>
+              </div>
+            </div>
+
+            <!-- Experience 5 -->
+            <div class="py-6 border-b border-black group hover:bg-white transition-colors flex flex-col sm:flex-row gap-4 sm:items-start cursor-pointer px-4 -mx-4 rounded-lg">
+              <div class="w-40 flex-shrink-0 flex items-center space-x-2 mt-1">
+                <div class="w-3 h-3 bg-black rounded-full"></div>
+                <span class="text-xs font-bold whitespace-nowrap">2023.02 - 2025.06</span>
+              </div>
+              <div class="flex-1">
+                <h4 class="font-bold text-lg group-hover:text-blue-600 transition-colors">系辦公室助理</h4>
+                <div class="text-sm font-bold text-gray-600 mb-2">國立中正大學傳播學系</div>
+                <p class="text-sm text-gray-700 leading-relaxed">協助系上文宣品、海報、紀念品、貼文設計與製作。辦理升學相關活動（個人申請面試）、研討會活動，並處理行政文書相關庶務。</p>
+              </div>
+            </div>
+
+            <!-- Experience 6 -->
+            <div class="py-6 border-b border-black group hover:bg-white transition-colors flex flex-col sm:flex-row gap-4 sm:items-start cursor-pointer px-4 -mx-4 rounded-lg">
+              <div class="w-40 flex-shrink-0 flex items-center space-x-2 mt-1">
+                <div class="w-3 h-3 bg-black rounded-full"></div>
+                <span class="text-xs font-bold whitespace-nowrap">2022.07 - 現在</span>
+              </div>
+              <div class="flex-1">
+                <h4 class="font-bold text-lg group-hover:text-blue-600 transition-colors">影音剪輯</h4>
+                <div class="text-sm font-bold text-gray-600 mb-2">國家科學及技術委員會 人文沙龍</div>
+                <p class="text-sm text-gray-700 leading-relaxed">常態性負責人文沙龍講座影音後製，已累積剪輯 20+ 部演講座談影片，處理素材總時長達 40 小時以上。</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- TAGS MARQUEE (Colorful) --- -->
+  <div class="bg-[#FFF] py-4 border-y border-black overflow-hidden relative">
+    <div class="whitespace-nowrap flex space-x-8">
+      <span class="animate-marquee-slow flex space-x-8 text-xl md:text-2xl font-black tracking-widest text-black">
+        <span># 視覺設計</span><span># 影音剪輯</span><span># 社群企劃</span><span># 網頁設計</span><span># 採訪編輯</span>
+        <span># 視覺設計</span><span># 影音剪輯</span><span># 社群企劃</span><span># 網頁設計</span><span># 採訪編輯</span>
+      </span>
+      <span class="animate-marquee-slow flex space-x-8 text-xl md:text-2xl font-black tracking-widest text-black" aria-hidden="true">
+        <span># 視覺設計</span><span># 影音剪輯</span><span># 社群企劃</span><span># 網頁設計</span><span># 採訪編輯</span>
+        <span># 視覺設計</span><span># 影音剪輯</span><span># 社群企劃</span><span># 網頁設計</span><span># 採訪編輯</span>
+      </span>
+    </div>
+  </div>
+
+  <!-- --- WORKS / PORTFOLIO SECTION --- -->
+  <section id="works" class="py-16 px-6 relative overflow-hidden bg-white">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
+      
+      <!-- Vertical Title -->
+      <div class="hidden md:flex flex-col items-center w-12 pt-2">
+        <div class="flex items-center justify-center w-10 h-10 rounded-full bg-black text-white mb-6 font-bold flex-shrink-0">W</div>
+        <div class="[writing-mode:vertical-rl] font-black tracking-widest text-2xl whitespace-nowrap text-black">
+          作品／專案
+        </div>
+      </div>
+      <div class="md:hidden flex items-center space-x-3 mb-6 border-b-2 border-black pb-4">
+         <div class="flex items-center justify-center w-8 h-8 rounded-full bg-black text-white font-bold flex-shrink-0">W</div>
+         <h2 class="font-black tracking-widest text-xl text-black">作品／專案</h2>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
+        
+        <!-- Category 1: 社群行銷 -->
+        <a href="cake.html" class="group cursor-pointer block h-full hover:no-underline outline-none">
+          <div class="flex flex-col relative h-full">
+            <!-- 加上 pb-8 以預留交疊後的視覺空間 -->
+            <div class="bg-[#EAEAEA] rounded-t-2xl aspect-[4/3] relative overflow-hidden border border-black border-b-0 flex items-center justify-center p-4 pb-8">
+               <!-- ▼ 圖片展示框 (實線邊框) ▼ -->
+               <div class="w-full h-full border border-black rounded-lg flex flex-col items-center justify-center text-gray-500 font-bold bg-white text-sm transition-transform group-hover:scale-[1.02] duration-300 relative overflow-hidden">
+                 
+                <img src="img/cake_01.JPG" alt="公視/CakeResume作品圖" class="absolute inset-0 w-full h-full object-cover z-10">
+
+               </div>
+            </div>
+            <div class="bg-white border border-black p-6 rounded-b-2xl rounded-tr-2xl -mt-4 relative z-10 flex-grow shadow-[0_4px_0_0_rgba(0,0,0,0.1)] group-hover:shadow-[4px_4px_0_0_rgba(0,0,0,1)] transition-shadow">
+              <div class="flex items-center space-x-2 text-xs font-bold text-gray-500 mb-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                <span>行銷專案與社群經營</span>
+              </div>
+              <h3 class="text-xl font-bold leading-tight mb-4 group-hover:text-blue-600 transition-colors">
+                Cake 2024 校園大使　社群圖文與短影音行銷
+              </h3>
+              <div class="text-xs text-gray-600 mb-6 font-medium line-clamp-2">
+                負責校園社群推廣行銷（包含短影音企劃與貼文圖文製作），並於校內舉辦實體宣傳活動。
+              </div>
+              <div class="flex flex-wrap gap-2 text-[10px] text-gray-500 mt-auto font-bold">
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#校園大使</span>
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#社群行銷</span>
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#短影音企劃</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category 2: 影音與新聞 -->
+        <a href="ptsgo.html" class="group cursor-pointer block h-full hover:no-underline outline-none">
+          <div class="flex flex-col relative h-full">
+            <!-- 加上 pb-8 以預留交疊後的視覺空間 -->
+            <div class="bg-[#F5F5F0] rounded-t-2xl aspect-[4/3] relative overflow-hidden border border-black border-b-0 flex items-center justify-center p-4 pb-8">
+               <!-- ▼ 圖片展示框 (實線邊框) ▼ -->
+               <div class="w-full h-full border border-black rounded-lg flex flex-col items-center justify-center text-gray-500 font-bold bg-white text-sm transition-transform group-hover:scale-[1.02] duration-300 relative overflow-hidden">
+                 
+                 <img src="img/pts_01.jpg" alt="中正E報/影音剪輯截圖" class="absolute inset-0 w-full h-full object-cover z-10">
+
+                 
+               </div>
+            </div>
+            <div class="bg-white border border-black p-6 rounded-b-2xl rounded-tr-2xl -mt-4 relative z-10 flex-grow shadow-[0_4px_0_0_rgba(0,0,0,0.1)] group-hover:shadow-[4px_4px_0_0_rgba(0,0,0,1)] transition-shadow">
+              <div class="flex items-center space-x-2 text-xs font-bold text-gray-500 mb-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                <span>IP設計與社群視覺</span>
+              </div>
+              <h3 class="text-xl font-bold leading-tight mb-4 group-hover:text-green-600 transition-colors">
+                公共電視《公視購》暑期實習　社群圖文行銷
+              </h3>
+              <div class="text-xs text-gray-600 mb-6 font-medium line-clamp-2">
+                於公視數位內容部實習期間，參與其電商平台《公視購》的社群圖文製作，並試作原創 IP 吉祥物 「小GO」 的設計與Guidebook。
+              </div>
+              <div class="flex flex-wrap gap-2 text-[10px] text-gray-500 mt-auto font-bold">
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#社群圖文</span>
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#IP設計</span>
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#行銷企劃</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category 3: 網頁與主視覺 -->
+        <a href="reels.html" class="group cursor-pointer block h-full hover:no-underline outline-none">
+          <div class="flex flex-col relative h-full">
+            <!-- 加上 pb-8 以預留交疊後的視覺空間 -->
+            <div class="bg-[#E8F0FE] rounded-t-2xl aspect-[4/3] relative overflow-hidden border border-black border-b-0 flex items-center justify-center p-4 pb-8">
+                <!-- ▼ 圖片展示框 (實線邊框) ▼ -->
+                <div class="w-full h-full border border-black rounded-lg flex flex-col items-center justify-center text-gray-500 font-bold bg-white text-sm transition-transform group-hover:scale-[1.02] duration-300 relative overflow-hidden">
+                 
+                 
+                 <img src="img/reels_01.jpg" alt="研討會/派對視覺圖" class="absolute inset-0 w-full h-full object-cover z-10">
+
+                 
+               </div>
+            </div>
+            <div class="bg-white border border-black p-6 rounded-b-2xl rounded-tr-2xl -mt-4 relative z-10 flex-grow shadow-[0_4px_0_0_rgba(0,0,0,0.1)] group-hover:shadow-[4px_4px_0_0_rgba(0,0,0,1)] transition-shadow">
+              <div class="flex items-center space-x-2 text-xs font-bold text-gray-500 mb-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                <span>社群行銷與短影音剪輯</span>
+              </div>
+              <h3 class="text-xl font-bold leading-tight mb-4 group-hover:text-purple-600 transition-colors">
+                影集《向流星許願的我們》、FOCASA《幾米男孩的 100 次勇敢》　社群Reels剪輯
+              </h3>
+              <div class="text-xs text-gray-600 mb-6 font-medium line-clamp-2">
+                負責影集與展演專案的精華片段挑選與 Reels 剪輯，有效提升社群曝光度 。
+              </div>
+              <div class="flex flex-wrap gap-2 text-[10px] text-gray-500 mt-auto font-bold">
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#Reels剪輯</span>
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#短影音行銷</span>
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#影視社群</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category 4: 社群行銷 -->
+        <a href="enews.html" class="group cursor-pointer block h-full hover:no-underline outline-none">
+          <div class="flex flex-col relative h-full">
+            <!-- 加上 pb-8 以預留交疊後的視覺空間 -->
+            <div class="bg-[#EAEAEA] rounded-t-2xl aspect-[4/3] relative overflow-hidden border border-black border-b-0 flex items-center justify-center p-4 pb-8">
+               <!-- ▼ 圖片展示框 (實線邊框) ▼ -->
+               <div class="w-full h-full border border-black rounded-lg flex flex-col items-center justify-center text-gray-500 font-bold bg-white text-sm transition-transform group-hover:scale-[1.02] duration-300 relative overflow-hidden">
+                 
+                <img src="img/enews_01.jpg" alt="公視/CakeResume作品圖" class="absolute inset-0 w-full h-full object-cover z-10">
+
+               </div>
+            </div>
+            <div class="bg-white border border-black p-6 rounded-b-2xl rounded-tr-2xl -mt-4 relative z-10 flex-grow shadow-[0_4px_0_0_rgba(0,0,0,0.1)] group-hover:shadow-[4px_4px_0_0_rgba(0,0,0,1)] transition-shadow">
+              <div class="flex items-center space-x-2 text-xs font-bold text-gray-500 mb-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                <span>新聞採訪與影音專題</span>
+              </div>
+              <h3 class="text-xl font-bold leading-tight mb-4 group-hover:text-blue-600 transition-colors">
+                實習新聞媒體《中正E報》　新聞專題採訪與製作
+              </h3>
+              <div class="text-xs text-gray-600 mb-6 font-medium line-clamp-2">
+                製作多項深度新聞專題，展現扎實採訪與剪輯能力，報導並獲 PeoPo 公民新聞獎肯定。
+              </div>
+              <div class="flex flex-wrap gap-2 text-[10px] text-gray-500 mt-auto font-bold">
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#新聞採訪</span>
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#專題報導</span>
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#影音剪輯</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category 5: 影音與新聞 -->
+        <a href="enews_design.html" class="group cursor-pointer block h-full hover:no-underline outline-none">
+          <div class="flex flex-col relative h-full">
+            <!-- 加上 pb-8 以預留交疊後的視覺空間 -->
+            <div class="bg-[#F5F5F0] rounded-t-2xl aspect-[4/3] relative overflow-hidden border border-black border-b-0 flex items-center justify-center p-4 pb-8">
+               <!-- ▼ 圖片展示框 (實線邊框) ▼ -->
+               <div class="w-full h-full border border-black rounded-lg flex flex-col items-center justify-center text-gray-500 font-bold bg-white text-sm transition-transform group-hover:scale-[1.02] duration-300 relative overflow-hidden">
+                 
+                 <img src="img/enews_cover1.png" alt="中正E報/影音剪輯截圖" class="absolute inset-0 w-full h-full object-cover z-10">
+
+                 
+               </div>
+            </div>
+            <div class="bg-white border border-black p-6 rounded-b-2xl rounded-tr-2xl -mt-4 relative z-10 flex-grow shadow-[0_4px_0_0_rgba(0,0,0,0.1)] group-hover:shadow-[4px_4px_0_0_rgba(0,0,0,1)] transition-shadow">
+              <div class="flex items-center space-x-2 text-xs font-bold text-gray-500 mb-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                <span>媒體編輯與視覺統籌</span>
+              </div>
+              <h3 class="text-xl font-bold leading-tight mb-4 group-hover:text-green-600 transition-colors">
+                實習新聞媒體《中正E報》　總編輯／視覺設計
+              </h3>
+              <div class="text-xs text-gray-600 mb-6 font-medium line-clamp-2">
+                擔任總編輯與視覺設計，確立品牌色彩規範，並統籌整體影音與文字新聞視覺 。
+              </div>
+              <div class="flex flex-wrap gap-2 text-[10px] text-gray-500 mt-auto font-bold">
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#視覺設計</span>
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#專案統籌</span>
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#媒體編輯</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category 6: 網頁與主視覺 -->
+        <a href="glowup.html" class="group cursor-pointer block h-full hover:no-underline outline-none">
+          <div class="flex flex-col relative h-full">
+            <!-- 加上 pb-8 以預留交疊後的視覺空間 -->
+            <div class="bg-[#E8F0FE] rounded-t-2xl aspect-[4/3] relative overflow-hidden border border-black border-b-0 flex items-center justify-center p-4 pb-8">
+                <!-- ▼ 圖片展示框 (實線邊框) ▼ -->
+                <div class="w-full h-full border border-black rounded-lg flex flex-col items-center justify-center text-gray-500 font-bold bg-white text-sm transition-transform group-hover:scale-[1.02] duration-300 relative overflow-hidden">
+                 
+                 
+                 <img src="img/glowup_01.jpg" alt="研討會/派對視覺圖" class="absolute inset-0 w-full h-full object-cover z-10">
+
+                 
+               </div>
+            </div>
+            <div class="bg-white border border-black p-6 rounded-b-2xl rounded-tr-2xl -mt-4 relative z-10 flex-grow shadow-[0_4px_0_0_rgba(0,0,0,0.1)] group-hover:shadow-[4px_4px_0_0_rgba(0,0,0,1)] transition-shadow">
+              <div class="flex items-center space-x-2 text-xs font-bold text-gray-500 mb-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                <span>專輯音樂製作與統籌</span>
+              </div>
+              <h3 class="text-xl font-bold leading-tight mb-4 group-hover:text-purple-600 transition-colors">
+                畢業製作：音樂專輯《Glow Up》　製作人
+              </h3>
+              <div class="text-xs text-gray-600 mb-6 font-medium line-clamp-2">
+                操刀第十屆數位傳播國際學術研討會主視覺、文宣品延伸與網頁開發；並設計 Spirited Away 音樂派對視覺與周邊。
+              </div>
+              <div class="flex flex-wrap gap-2 text-[10px] text-gray-500 mt-auto font-bold">
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#專輯製作</span>
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#專案統籌</span>
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#周邊商品</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        
+        <!-- Category 7: 社群行銷 -->
+        <a href="ntsc.html" class="group cursor-pointer block h-full hover:no-underline outline-none">
+          <div class="flex flex-col relative h-full">
+            <!-- 加上 pb-8 以預留交疊後的視覺空間 -->
+            <div class="bg-[#EAEAEA] rounded-t-2xl aspect-[4/3] relative overflow-hidden border border-black border-b-0 flex items-center justify-center p-4 pb-8">
+               <!-- ▼ 圖片展示框 (實線邊框) ▼ -->
+               <div class="w-full h-full border border-black rounded-lg flex flex-col items-center justify-center text-gray-500 font-bold bg-white text-sm transition-transform group-hover:scale-[1.02] duration-300 relative overflow-hidden">
+                 
+                <img src="img/ntsc_01.jpg" alt="公視/CakeResume作品圖" class="absolute inset-0 w-full h-full object-cover z-10">
+
+               </div>
+            </div>
+            <div class="bg-white border border-black p-6 rounded-b-2xl rounded-tr-2xl -mt-4 relative z-10 flex-grow shadow-[0_4px_0_0_rgba(0,0,0,0.1)] group-hover:shadow-[4px_4px_0_0_rgba(0,0,0,1)] transition-shadow">
+              <div class="flex items-center space-x-2 text-xs font-bold text-gray-500 mb-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                <span>長影音後製與剪輯</span>
+              </div>
+              <h3 class="text-xl font-bold leading-tight mb-4 group-hover:text-blue-600 transition-colors">
+                國家科學及技術委員會人文沙龍　影音剪輯
+              </h3>
+              <div class="text-xs text-gray-600 mb-6 font-medium line-clamp-2">
+                常態性負責人文沙龍講座影音後製，已累積剪輯 20+ 部演講座談影片，處理素材總時長達 40 小時以上。
+              </div>
+              <div class="flex flex-wrap gap-2 text-[10px] text-gray-500 mt-auto font-bold">
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#長影音剪輯</span>
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#後期製作</span>
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#講座紀錄</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category 8: 影音與新聞 -->
+        <a href="spiritedaway.html" class="group cursor-pointer block h-full hover:no-underline outline-none">
+          <div class="flex flex-col relative h-full">
+            <!-- 加上 pb-8 以預留交疊後的視覺空間 -->
+            <div class="bg-[#F5F5F0] rounded-t-2xl aspect-[4/3] relative overflow-hidden border border-black border-b-0 flex items-center justify-center p-4 pb-8">
+               <!-- ▼ 圖片展示框 (實線邊框) ▼ -->
+               <div class="w-full h-full border border-black rounded-lg flex flex-col items-center justify-center text-gray-500 font-bold bg-white text-sm transition-transform group-hover:scale-[1.02] duration-300 relative overflow-hidden">
+                 
+                 <img src="img/sp_visual.png" alt="中正E報/影音剪輯截圖" class="absolute inset-0 w-full h-full object-cover z-10">
+
+                 
+               </div>
+            </div>
+            <div class="bg-white border border-black p-6 rounded-b-2xl rounded-tr-2xl -mt-4 relative z-10 flex-grow shadow-[0_4px_0_0_rgba(0,0,0,0.1)] group-hover:shadow-[4px_4px_0_0_rgba(0,0,0,1)] transition-shadow">
+              <div class="flex items-center space-x-2 text-xs font-bold text-gray-500 mb-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                <span>活動視覺與品牌識別</span>
+              </div>
+              <h3 class="text-xl font-bold leading-tight mb-4 group-hover:text-green-600 transition-colors">
+                電子音樂派對《Spirited Away》　視覺識別／美術設計
+              </h3>
+              <div class="text-xs text-gray-600 mb-6 font-medium line-clamp-2">
+                為電子音樂派對打造視覺識別，設計海報、門票與流程表，精準傳達活動氛圍。
+              </div>
+              <div class="flex flex-wrap gap-2 text-[10px] text-gray-500 mt-auto font-bold">
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#視覺識別</span>
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#美術設計</span>
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#活動海報</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category 9: 網頁與主視覺 -->
+        <a href="seminar.html" class="group cursor-pointer block h-full hover:no-underline outline-none">
+          <div class="flex flex-col relative h-full">
+            <!-- 加上 pb-8 以預留交疊後的視覺空間 -->
+            <div class="bg-[#E8F0FE] rounded-t-2xl aspect-[4/3] relative overflow-hidden border border-black border-b-0 flex items-center justify-center p-4 pb-8">
+                <!-- ▼ 圖片展示框 (實線邊框) ▼ -->
+                <div class="w-full h-full border border-black rounded-lg flex flex-col items-center justify-center text-gray-500 font-bold bg-white text-sm transition-transform group-hover:scale-[1.02] duration-300 relative overflow-hidden">
+                 
+                 
+                 <img src="img/seminar_visual.png" alt="研討會/派對視覺圖" class="absolute inset-0 w-full h-full object-cover z-10">
+
+                 
+               </div>
+            </div>
+            <div class="bg-white border border-black p-6 rounded-b-2xl rounded-tr-2xl -mt-4 relative z-10 flex-grow shadow-[0_4px_0_0_rgba(0,0,0,0.1)] group-hover:shadow-[4px_4px_0_0_rgba(0,0,0,1)] transition-shadow">
+              <div class="flex items-center space-x-2 text-xs font-bold text-gray-500 mb-3">
+                <span class="w-1.5 h-1.5 rounded-full bg-black"></span>
+                <span>活動視覺與品牌識別</span>
+              </div>
+              <h3 class="text-xl font-bold leading-tight mb-4 group-hover:text-purple-600 transition-colors">
+                第十屆數位傳播國際學術演討會<br/>活動識別／視覺設計
+              </h3>
+              <div class="text-xs text-gray-600 mb-6 font-medium line-clamp-2">
+                設計活動主視覺、海報、背板、邀請函、名牌、桌牌、三折頁等實體文宣。製作社群平台宣傳圖，並獨立建置與維護活動官方網頁。
+              </div>
+              <div class="flex flex-wrap gap-2 text-[10px] text-gray-500 mt-auto font-bold">
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#活動主視覺</span>
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#網頁建置</span>
+                <span class="border border-gray-300 px-1.5 py-0.5 rounded">#實體文宣</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- --- FOOTER / CONTACT --- -->
+  <footer id="contact" class="bg-[#1A1A1A] text-white py-16 px-6 border-t-[16px] border-[#FFF]">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-end gap-8">
+      <div class="text-center md:text-left">
+        <h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-4">₍₍◝(°꒳°*)◜₎₎</h2>
+        <p class="text-gray-400 font-medium max-w-sm mb-6">
+          正在尋找具備行銷思維與設計美學的視覺人才嗎？歡迎隨時與我聯繫！
+        </p>
+        <a href="https://reurl.cc/grZooR" class="inline-flex items-center space-x-2 bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-yellow-300 transition-colors">
+          <i class="fa-solid fa-download"></i>
+          <span>作品集PDF下載</span>
+        </a>
+      </div>
+      
+      <div class="flex flex-col items-center md:items-end space-y-4">
+        <div class="flex space-x-4">
+          
+        </div>
+        <div class="text-xs text-gray-500 tracking-widest uppercase font-bold">
+          © 2026 莊淳翔 Yoruei Chuang. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Initialize Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+
+    // === Carousel Logic (自動輪播控制) ===
+    let currentSlide = 0;
+    const track = document.getElementById('carousel-track');
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.carousel-dot');
+    const totalSlides = slides.length;
+    let carouselInterval;
+
+    function updateCarousel() {
+      if (!track) return;
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+      dots.forEach((dot, index) => {
+        if (index === currentSlide) {
+          dot.classList.add('bg-black');
+          dot.classList.remove('bg-gray-300');
+        } else {
+          dot.classList.remove('bg-black');
+          dot.classList.add('bg-gray-300');
+        }
+      });
+    }
+
+    function nextSlide(e) {
+      if (e) e.stopPropagation(); // 避免點擊箭頭時觸發連結
+      currentSlide = (currentSlide + 1) % totalSlides;
+      updateCarousel();
+    }
+
+    function prevSlide(e) {
+      if (e) e.stopPropagation();
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      updateCarousel();
+    }
+
+    function goToSlide(index) {
+      currentSlide = index;
+      updateCarousel();
+    }
+
+    function startCarousel() {
+      // 每 4 秒自動切換下一張
+      carouselInterval = setInterval(() => nextSlide(), 4000);
+    }
+
+    function stopCarousel() {
+      clearInterval(carouselInterval);
+    }
+
+    const container = document.getElementById('carousel-container');
+    if (container) {
+      // 滑鼠懸停時暫停輪播，移開時繼續自動輪播
+      container.addEventListener('mouseenter', stopCarousel);
+      container.addEventListener('mouseleave', startCarousel);
+      startCarousel(); // 啟動自動輪播
+    }
+  </script>
+</body>
+</html>

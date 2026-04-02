@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>專案展示 | 音樂專輯《Glow Up》製作人 - 莊淳翔</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome CDN (For Spotify & YouTube Music Icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .bg-base { background-color: #FFFBEB; } /* 暖米白底色 */
+    .text-base-dark { color: #1A1A1A; }
+    .border-base-dark { border-color: #1A1A1A; }
+    
+    /* Instagram 漸層背景 (保留給Footer使用) */
+    .ig-gradient {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    }
+  </style>
+</head>
+<body class="bg-base text-base-dark font-sans min-h-screen relative overflow-x-hidden selection:bg-yellow-300 selection:text-black">
+
+  <!-- --- HEADER (置頂導覽列) --- -->
+  <header class="flex flex-col md:flex-row justify-between items-center px-6 py-4 border-b border-base-dark bg-white/95 backdrop-blur-md sticky top-0 z-50 gap-4 md:gap-0">
+    <div class="flex flex-col text-center md:text-left">
+      <h1 class="text-xl font-black tracking-tighter leading-none">莊淳翔 / 作品集 PORTFOLIO</h1>
+    </div>
+
+    <!-- 常駐導覽列 -->
+    <nav class="flex items-center space-x-6 font-bold text-xs md:text-sm tracking-widest">
+      <a href="index.html" class="flex items-center space-x-1 hover:text-blue-600 transition-colors">
+        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+        <span>返回首頁</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- --- PROJECT HERO SECTION --- -->
+  <section class="relative px-6 py-12 md:py-20 border-b border-base-dark overflow-hidden bg-[#FEF3C7]">
+    <!-- 裝飾用背景點綴 (發光感) -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-yellow-300 rounded-full mix-blend-multiply filter blur-[100px] opacity-40 z-0 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10 items-center">
+      
+      <!-- Left: Project Title & Meta -->
+      <div class="lg:col-span-5 flex flex-col justify-center">
+        <div class="inline-block bg-white px-3 py-1 rounded-full text-xs mb-6 font-bold border border-black w-max shadow-sm">
+          音樂統籌與整合行銷
+        </div>
+        
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter leading-[1.1] mb-6 text-black">
+          畢業製作<br/>音樂專輯《Glow Up》
+        </h1>
+        
+        <p class="text-sm md:text-base leading-relaxed font-bold mb-8 max-w-md text-gray-900 opacity-90">
+          擔任畢業製作原創音樂專輯的製作人與行銷統籌。從概念發想、群眾募資、音樂與 MV 產製，到周邊商品開發與線上線下實體宣傳活動，進行全方位的專案管理。
+        </p>
+
+        <!-- Meta Info -->
+        <div class="grid grid-cols-2 gap-4 border-t-2 border-black pt-6">
+          <div>
+            <div class="text-[10px] text-black font-bold tracking-widest uppercase mb-1 opacity-70">職位</div>
+            <div class="text-sm font-bold">專輯製作人、行銷統籌</div>
+          </div>
+          <div>
+            <div class="text-[10px] text-black font-bold tracking-widest uppercase mb-1 opacity-70">成就目標</div>
+            <div class="text-sm font-bold text-yellow-700">募資達標 $81,236</div>
+          </div>
+          <div class="col-span-2">
+            <div class="text-[10px] text-black font-bold tracking-widest uppercase mb-1 opacity-70">技能</div>
+            <div class="flex flex-wrap gap-2 mt-1">
+              <span class="text-xs bg-black text-white px-2 py-1 rounded font-bold">群眾募資</span>
+              <span class="text-xs bg-black text-white px-2 py-1 rounded font-bold">MV製片</span>
+              <span class="text-xs bg-black text-white px-2 py-1 rounded font-bold">活動企劃</span>
+              <span class="text-xs bg-black text-white px-2 py-1 rounded font-bold">周邊開發</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Main Hero Image -->
+      <div class="lg:col-span-7">
+        <div class="bg-black rounded-2xl border-2 border-black shadow-[8px_8px_0_0_rgba(0,0,0,1)] aspect-[4/3] lg:aspect-[3/2] flex items-center justify-center p-4 relative overflow-hidden transform md:-rotate-2 transition-transform hover:rotate-0 duration-500">
+          
+          <!-- ▼ 圖片展示框 (實線邊框) ▼ -->
+          <div class="w-full h-full border border-gray-700 rounded-lg flex flex-col items-center justify-center text-yellow-500 font-bold bg-zinc-900 text-sm relative overflow-hidden">
+            
+            <img src="img/glowup_01.jpg" alt="Glow Up 專輯視覺" class="absolute inset-0 w-full h-full object-cover z-10 opacity-100">
+
+            
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- --- PROJECT CONTENT --- -->
+  <section class="py-16 md:py-24 px-6 bg-base">
+    <div class="max-w-6xl mx-auto space-y-24">
+
+      <!-- ==========================================
+           SECTION 1: CONCEPT PHOTOS (輪播圖)
+      ========================================== -->
+      <div class="flex flex-col items-center">
+        <div class="flex items-center space-x-2 border-b-2 border-black pb-2 mb-8">
+          <i data-lucide="camera" class="w-6 h-6 text-yellow-600"></i>
+          <h2 class="text-2xl font-black tracking-widest">形象概念照片</h2>
+        </div>
+        <p class="text-gray-700 leading-relaxed font-medium mb-10 text-center max-w-2xl">
+          為詮釋專輯《Glow Up》在黑暗中尋找光芒、自我成長的核心概念，我們拍攝了一系列視覺強烈的概念照，作為後續社群宣傳與實體印刷的基底素材。
+        </p>
+
+        <!-- 3:2 概念照片輪播展示 (Carousel) -->
+        <div class="w-full max-w-[800px] bg-white rounded-xl border border-black shadow-[8px_8px_0_0_rgba(0,0,0,1)] p-3 relative group">
+          <div id="concept-carousel" class="bg-gray-100 w-full aspect-[3/2] rounded-lg border border-black relative overflow-hidden">
+            <!-- 輪播軌道 -->
+            <div id="concept-track" class="flex w-full h-full transition-transform duration-500 ease-in-out">
+              <!-- Slide 1 -->
+              <div class="w-full h-full flex-shrink-0 flex flex-col items-center justify-center relative bg-zinc-800">
+                <img src="img/glowup/1.jpg" class="absolute inset-0 w-full h-full object-cover z-10">
+                <i data-lucide="image" class="w-8 h-8 mb-2 relative z-0 text-gray-500"></i>
+                <span class="relative z-0 text-gray-400 font-bold">[概念照片 1]</span>
+              </div>
+              <!-- Slide 2 -->
+              <div class="w-full h-full flex-shrink-0 flex flex-col items-center justify-center relative bg-zinc-700">
+                <img src="img/glowup/2.jpg" class="absolute inset-0 w-full h-full object-cover z-10">
+                <i data-lucide="image" class="w-8 h-8 mb-2 relative z-0 text-gray-400"></i>
+                <span class="relative z-0 text-gray-300 font-bold">[概念照片 2]</span>
+              </div>
+              <!-- Slide 3 -->
+              <div class="w-full h-full flex-shrink-0 flex flex-col items-center justify-center relative bg-zinc-800">
+                <img src="img/glowup/3.jpg" class="absolute inset-0 w-full h-full object-cover z-10">
+                <i data-lucide="image" class="w-8 h-8 mb-2 relative z-0 text-gray-500"></i>
+                <span class="relative z-0 text-gray-400 font-bold">[概念照片 3]</span>
+              </div>
+              <!-- Slide 4 -->
+              <div class="w-full h-full flex-shrink-0 flex flex-col items-center justify-center relative bg-zinc-700">
+                <img src="img/glowup/4.jpg" class="absolute inset-0 w-full h-full object-cover z-10">
+                <i data-lucide="image" class="w-8 h-8 mb-2 relative z-0 text-gray-400"></i>
+                <span class="relative z-0 text-gray-300 font-bold">[概念照片 4]</span>
+              </div>
+              <!-- Slide 5 -->
+              <div class="w-full h-full flex-shrink-0 flex flex-col items-center justify-center relative bg-zinc-800">
+                <img src="img/glowup/5.jpg" class="absolute inset-0 w-full h-full object-cover z-10">
+                <i data-lucide="image" class="w-8 h-8 mb-2 relative z-0 text-gray-500"></i>
+                <span class="relative z-0 text-gray-400 font-bold">[概念照片 5]</span>
+              </div>
+            </div>
+            
+            <!-- 左右控制按鈕 -->
+            <button class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 border border-black rounded-full flex items-center justify-center z-20 hover:bg-yellow-400 hover:text-black transition-colors shadow-sm opacity-0 group-hover:opacity-100" onclick="prevConcept()">
+              <i data-lucide="chevron-left" class="w-5 h-5"></i>
+            </button>
+            <button class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 border border-black rounded-full flex items-center justify-center z-20 hover:bg-yellow-400 hover:text-black transition-colors shadow-sm opacity-0 group-hover:opacity-100" onclick="nextConcept()">
+              <i data-lucide="chevron-right" class="w-5 h-5"></i>
+            </button>
+            
+            <!-- 導覽點 (5個) -->
+            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-20" id="concept-dots-container">
+              <button class="concept-dot w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-white border border-black transition-colors" onclick="goToConcept(0)"></button>
+              <button class="concept-dot w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-gray-400/50 border border-black transition-colors" onclick="goToConcept(1)"></button>
+              <button class="concept-dot w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-gray-400/50 border border-black transition-colors" onclick="goToConcept(2)"></button>
+              <button class="concept-dot w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-gray-400/50 border border-black transition-colors" onclick="goToConcept(3)"></button>
+              <button class="concept-dot w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-gray-400/50 border border-black transition-colors" onclick="goToConcept(4)"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================
+           SECTION 2: ALBUM & STREAMING (專輯與數位發行)
+      ========================================== -->
+      <div class="flex flex-col md:flex-row gap-12 items-center pt-8 border-t border-gray-300">
+        
+        <!-- Album Cover -->
+        <div class="md:w-1/3 w-full max-w-[350px] flex justify-center">
+          <div class="bg-white rounded-xl border border-black shadow-[6px_6px_0_0_rgba(0,0,0,1)] p-3 w-full group">
+            <div class="bg-zinc-900 w-full aspect-square rounded-lg border border-black flex flex-col items-center justify-center text-gray-500 font-bold overflow-hidden relative">
+               <img src="img/glowup_album.jpg" alt="Glow Up 專輯封面" class="absolute inset-0 w-full h-full object-cover z-10 transition-transform group-hover:scale-105 duration-500">
+             
+            </div>
+          </div>
+        </div>
+
+        <!-- Album Description & Buttons -->
+        <div class="md:w-2/3 flex flex-col">
+          <div class="flex items-center space-x-2 border-b-2 border-black pb-2 mb-4 w-max">
+            <i data-lucide="headphones" class="w-5 h-5 text-yellow-600"></i>
+            <h2 class="text-xl font-black tracking-widest">專輯介紹</h2>
+          </div>
+          <h3 class="text-3xl font-bold mb-4">《Glow Up》原創音樂專輯</h3>
+          <p class="text-gray-700 leading-relaxed font-medium mb-8">
+            「Glow Up」—— 在黑暗中尋找光芒，在成長中綻放自我。專輯以「Glow Up」為概念，由伯威、威蓁兩位音樂人，透過音樂寫下人生經驗，重複回味咀嚼，反芻為成長的養分。「Glow Up」同時具備成長、發光兩層意涵，象徵著在黑暗中不斷探索、突破自我的過程。在名為人生的旅程中，我們或許曾迷失在黑暗裡，但身旁有許多微弱的星火，正悄然點亮，引領我們前行。
+          </p>
+          
+          <p class="text-sm font-bold text-gray-500 mb-3 tracking-widest uppercase">在串流平台上收聽</p>
+          <div class="flex flex-wrap gap-4">
+            <!-- Spotify Button -->
+            <a href="#" target="_blank" class="inline-flex items-center space-x-2 bg-[#1DB954] text-white px-6 py-3 rounded-full font-bold hover:bg-[#1ed760] hover:scale-105 transition-all shadow-md border border-black">
+              <i class="fa-brands fa-spotify text-xl"></i>
+              <span>Listen on Spotify</span>
+            </a>
+            <!-- YouTube Music Button -->
+            <a href="#" target="_blank" class="inline-flex items-center space-x-2 bg-black text-white px-6 py-3 rounded-full font-bold hover:bg-gray-800 hover:scale-105 transition-all shadow-md border border-black">
+              <i class="fa-brands fa-youtube text-xl text-red-500"></i>
+              <span>YouTube Music</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================
+           SECTION 3: MUSIC VIDEOS (音樂錄影帶)
+      ========================================== -->
+      <div class="flex flex-col items-start pt-8 border-t border-gray-300">
+        <div class="flex items-center space-x-2 border-b-2 border-black pb-2 mb-10 w-full md:w-auto">
+          <i data-lucide="film" class="w-5 h-5 text-yellow-600"></i>
+          <h2 class="text-xl font-black tracking-widest">音樂MV</h2>
+        </div>
+        
+        <p class="text-gray-700 leading-relaxed font-medium mb-8 max-w-2xl">
+          配合專輯的主打歌，我們籌畫並拍攝了兩支風格迥異的音樂錄影帶 (MV)。從腳本分鏡撰寫、場景勘景、劇組人員調度，到後期的調色與剪輯，皆由團隊合力完成。
+        </p>
+
+        <!-- 2 Columns Grid for MVs -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+          
+          <!-- MV 1 -->
+          <div class="group">
+            <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-4 flex flex-col h-full">
+              <div class="aspect-video bg-black rounded-lg border border-black relative overflow-hidden mb-4">
+                <!-- YouTube Embed for MV 1 -->
+                <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/uq6TKzRxn4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <h3 class="text-xl font-bold mb-2 text-black group-hover:text-yellow-600 transition-colors">威蓁〈Bittersweet〉｜Official Music Video</h3>
+              <p class="text-sm text-gray-600">
+                以劇情向的手法拍攝，講述主角在城市中尋找自我的故事。擔任製片統籌，確保拍攝進度與預算控制。
+              </p>
+            </div>
+          </div>
+
+          <!-- MV 2 -->
+          <div class="group">
+            <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-4 flex flex-col h-full">
+              <div class="aspect-video bg-black rounded-lg border border-black relative overflow-hidden mb-4">
+                <!-- YouTube Embed for MV 2 -->
+                <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/plS2Pt2A8sk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <h3 class="text-xl font-bold mb-2 text-black group-hover:text-yellow-600 transition-colors">伯威〈城市旅人〉｜Official Music Video</h3>
+              <p class="text-sm text-gray-600">
+                運用大量的慢動作與高反差的光影設計，營造出歌曲中內省與寧靜的情緒張力。
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ==========================================
+           SECTION 4: CROWDFUNDING (群眾募資)
+      ========================================== -->
+      <div class="flex flex-col md:flex-row gap-10 items-center pt-8 border-t border-gray-300">
+        <div class="md:w-1/2 flex flex-col">
+          <div class="flex items-center space-x-2 border-b-2 border-black pb-2 mb-4 w-max">
+            <i data-lucide="circle-dollar-sign" class="w-5 h-5 text-yellow-600"></i>
+            <h2 class="text-xl font-black tracking-widest">群眾募資計畫</h2>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">化理想為現實：成功的募資計畫</h3>
+          <p class="text-gray-700 leading-relaxed font-medium mb-6">
+            為了支撐龐大的音樂製作與拍攝預算，我們在知名群眾募資平台上發起了專案。我負責撰寫募資文案、規劃回饋方案階層，並持續在社群上進行進度更新與催票。
+          </p>
+          <p class="text-gray-700 leading-relaxed font-medium">
+            透過精準的受眾定位與感人的創作初衷，我們在一個月內不僅順利達標，更成功募集到了超過八萬元的資金，為這張專輯注入了最實質的動力。
+          </p>
+        </div>
+        
+        <!-- Funding Achievement Banner -->
+        <div class="md:w-1/2 w-full">
+          <div class="bg-black text-white rounded-2xl border-4 border-yellow-400 shadow-[8px_8px_0_0_#facc15] p-8 md:p-12 text-center relative overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <!-- Background Decoration -->
+            <i data-lucide="rocket" class="absolute -right-6 -bottom-6 w-32 h-32 text-gray-800 opacity-30"></i>
+            
+            <div class="text-sm font-bold tracking-widest text-gray-300 mb-2 relative z-10">群眾募資最終達成金額</div>
+            <div class="text-5xl md:text-6xl font-black text-yellow-400 tracking-tighter mb-4 relative z-10">
+              NT$ 81,236
+            </div>
+            <div class="inline-flex items-center space-x-2 bg-yellow-400 text-black px-4 py-1.5 rounded-full font-bold text-sm relative z-10">
+              <i data-lucide="check-circle" class="w-4 h-4"></i>
+              <span>162% 成功達標</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================
+           SECTION 5: MERCHANDISE (周邊商品)
+      ========================================== -->
+      <div class="flex flex-col items-start pt-8 border-t border-gray-300">
+        <div class="flex items-center space-x-2 border-b-2 border-black pb-2 mb-10 w-full md:w-auto">
+          <i data-lucide="shopping-bag" class="w-5 h-5 text-yellow-600"></i>
+          <h2 class="text-xl font-black tracking-widest">周邊商品設計</h2>
+        </div>
+        
+        <p class="text-gray-700 leading-relaxed font-medium mb-10 max-w-3xl">
+          作為募資的回饋品與現場販售的周邊，我們將《Glow Up》的視覺元素延伸至實體商品上。五款精心開發的實用周邊，不僅兼具設計感，更讓音樂的陪伴融入粉絲的日常生活中。
+        </p>
+
+        <!-- 5 Items Grid (Top 3, Bottom 2 styling via grid cols) -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 w-full">
+          
+          <!-- Item 1: 貼紙組 -->
+          <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-3 flex flex-col group hover:-translate-y-1 transition-transform">
+            <div class="aspect-square bg-gray-50 rounded-lg border border-black relative overflow-hidden mb-3 flex items-center justify-center text-gray-400 font-bold text-xs">
+               <img src="img/glowup/s1.png" class="absolute inset-0 w-full h-full object-contain p-4 z-10">
+              <i data-lucide="sticker" class="w-6 h-6 mb-1"></i><span>[貼紙組圖]</span>
+            </div>
+            <h4 class="font-bold text-sm text-center">概念貼紙組</h4>
+          </div>
+
+          <!-- Item 2: NFC吊飾 -->
+          <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-3 flex flex-col group hover:-translate-y-1 transition-transform">
+            <div class="aspect-square bg-gray-50 rounded-lg border border-black relative overflow-hidden mb-3 flex items-center justify-center text-gray-400 font-bold text-xs">
+              <img src="img/glowup/s2.png" class="absolute inset-0 w-full h-full object-contain p-4 z-10">
+              <i data-lucide="smartphone-nfc" class="w-6 h-6 mb-1"></i><span>[NFC吊飾圖]</span>
+            </div>
+            <h4 class="font-bold text-sm text-center">數位音樂 NFC 吊飾</h4>
+          </div>
+
+          <!-- Item 3: 打火機 -->
+          <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-3 flex flex-col group hover:-translate-y-1 transition-transform">
+            <div class="aspect-square bg-gray-50 rounded-lg border border-black relative overflow-hidden mb-3 flex items-center justify-center text-gray-400 font-bold text-xs">
+              <img src="img/glowup/s3.png" class="absolute inset-0 w-full h-full object-contain p-4 z-10">
+              <i data-lucide="flame" class="w-6 h-6 mb-1"></i><span>[打火機圖]</span>
+            </div>
+            <h4 class="font-bold text-sm text-center">Glow Up 打火機</h4>
+          </div>
+
+          <!-- Item 4: 襪子 -->
+          <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-3 flex flex-col group hover:-translate-y-1 transition-transform">
+            <div class="aspect-square bg-gray-50 rounded-lg border border-black relative overflow-hidden mb-3 flex items-center justify-center text-gray-400 font-bold text-xs">
+              <img src="img/glowup/s4.png" class="absolute inset-0 w-full h-full object-contain p-4 z-10">
+              <i data-lucide="footprints" class="w-6 h-6 mb-1"></i><span>[刺繡襪子圖]</span>
+            </div>
+            <h4 class="font-bold text-sm text-center">品牌刺繡長襪</h4>
+          </div>
+
+          <!-- Item 5: 衣服 -->
+          <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-3 flex flex-col group hover:-translate-y-1 transition-transform sm:col-span-2 md:col-span-1 lg:col-span-1">
+            <div class="aspect-square bg-gray-50 rounded-lg border border-black relative overflow-hidden mb-3 flex items-center justify-center text-gray-400 font-bold text-xs">
+              <img src="img/glowup/s5.png" class="absolute inset-0 w-full h-full object-contain p-4 z-10">
+              <i data-lucide="shirt" class="w-6 h-6 mb-1"></i><span>[T-Shirt圖]</span>
+            </div>
+            <h4 class="font-bold text-sm text-center">主視覺 T-shirt</h4>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ==========================================
+           SECTION 6: MARKETING CAMPAIGN (行銷活動)
+      ========================================== -->
+      <div class="flex flex-col items-start pt-8 border-t border-gray-300">
+        <div class="flex items-center space-x-2 border-b-2 border-black pb-2 mb-10 w-full md:w-auto">
+          <i data-lucide="megaphone" class="w-5 h-5 text-yellow-600"></i>
+          <h2 class="text-xl font-black tracking-widest">行銷計畫</h2>
+        </div>
+        
+        <p class="text-gray-700 leading-relaxed font-medium mb-10 max-w-3xl">
+          為了讓專輯能觸及到更多大學生受眾，我策劃了一系列「線上結合線下」的整合行銷活動，從趣味互動到實體演出，層層堆疊發片前的期待感。
+        </p>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full">
+          
+          <!-- Campaign 1: 心理測驗 -->
+          <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-6 flex flex-col relative overflow-hidden group">
+            <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-6 border border-blue-300">
+              <i data-lucide="help-circle" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-black">線上：病毒式心理測驗</h3>
+            <p class="text-sm text-gray-600 mb-6 flex-grow">
+              結合專輯歌曲情境，製作「你是哪一種發光體？」網頁版心理測驗。透過有趣的測驗結果引發社群平台 (IG) 上的自主分享與轉發，快速擴散品牌知名度。
+            </p>
+            <div class="bg-gray-100 rounded-lg border border-black aspect-[9/16] flex items-center justify-center text-gray-400 text-xs font-bold relative overflow-hidden">
+               <img src="img/glowup/6.jpg" class="absolute inset-0 w-full h-full object-cover">
+               <span>[心理測驗網頁截圖]</span>
+            </div>
+          </div>
+
+          <!-- Campaign 2: 校園快閃 -->
+          <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-6 flex flex-col relative overflow-hidden group">
+            <div class="w-12 h-12 bg-red-100 text-red-600 rounded-full flex items-center justify-center mb-6 border border-red-300">
+              <i data-lucide="mic-2" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-black">線下：校園快閃表演</h3>
+            <p class="text-sm text-gray-600 mb-6 flex-grow">
+              在募資衝刺期，我們策劃了校園內的「驚喜快閃 Live 演出」。將實體的音樂能量直接帶入校園人群中，並於現場發放宣傳小卡，有效提高募資轉換率。
+            </p>
+            <div class="bg-gray-100 rounded-lg border border-black aspect-[9/16] flex items-center justify-center text-gray-400 text-xs font-bold relative overflow-hidden">
+               <img src="img/glowup/7.jpg" class="absolute inset-0 w-full h-full object-cover">
+               <span>[快閃演出現場側拍照]</span>
+            </div>
+          </div>
+
+          <!-- Campaign 3: 電台訪談 Reels -->
+          <div class="bg-white rounded-xl border border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] p-6 flex flex-col relative overflow-hidden group">
+            <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center mb-6 border border-purple-300">
+              <i data-lucide="radio" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-black">內容：電台訪談 Reels 剪輯</h3>
+            <p class="text-sm text-gray-600 mb-6 flex-grow">
+              受邀參與地方廣播電台專訪。我將長達一小時的純聲音訪談，擷取最精華、最有趣的段落，配上動態字幕剪輯成多支 IG Reels 短影音，延續宣傳長尾效應。
+            </p>
+            <div class="bg-gray-100 rounded-lg border border-black aspect-[9/16] flex items-center justify-center text-gray-400 text-xs font-bold relative overflow-hidden">
+               <img src="img/glowup/8.jpg" class="absolute inset-0 w-full h-full object-cover">
+               <span>[訪談 Reels 短影音截圖]</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- --- PROJECT NAVIGATION (Next/Prev) --- -->
+  <section class="border-y border-base-dark">
+    <!-- 下一個專案連結回首頁 -->
+    <a href="index.html#works" class="block w-full group relative overflow-hidden">
+      <!-- Background Hover Effect -->
+      <div class="absolute inset-0 bg-[#FDFBF7] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0"></div>
+      
+      <div class="px-6 py-16 md:py-24 text-center relative z-10 flex flex-col items-center justify-center">
+        <span class="text-sm font-bold tracking-widest text-gray-500 mb-4 group-hover:text-black transition-colors">BACK TO</span>
+        <h2 class="text-3xl md:text-5xl font-black tracking-tighter text-black flex items-center gap-4">
+          查看更多專案作品
+          <i data-lucide="arrow-right" class="w-8 h-8 md:w-12 md:h-12 group-hover:translate-x-4 transition-transform duration-300"></i>
+        </h2>
+      </div>
+    </a>
+  </section>
+
+ <!-- --- FOOTER / CONTACT --- -->
+  <footer id="contact" class="bg-[#1A1A1A] text-white py-16 px-6 border-t-[16px] border-[#FFF]">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-end gap-8">
+      <div class="text-center md:text-left">
+        <h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-4">₍₍◝(°꒳°*)◜₎₎</h2>
+        <p class="text-gray-400 font-medium max-w-sm mb-6">
+          正在尋找具備行銷思維與設計美學的視覺人才嗎？歡迎隨時與我聯繫！
+        </p>
+        <a href="https://reurl.cc/grZooR" class="inline-flex items-center space-x-2 bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-yellow-300 transition-colors">
+          <i class="fa-solid fa-download"></i>
+          <span>作品集PDF下載</span>
+        </a>
+      </div>
+      
+      <div class="flex flex-col items-center md:items-end space-y-4">
+        <div class="flex space-x-4">
+          
+        </div>
+        <div class="text-xs text-gray-500 tracking-widest uppercase font-bold">
+          © 2026 莊淳翔 Yoruei Chuang. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+
+    // === Concept Carousel Logic (概念照片自動輪播控制) ===
+    let currentConcept = 0;
+    const conceptTrack = document.getElementById('concept-track');
+    const totalConcepts = conceptTrack ? conceptTrack.children.length : 0; 
+    const conceptDots = document.querySelectorAll('.concept-dot');
+    let conceptInterval;
+
+    function updateConceptCarousel() {
+      if (!conceptTrack || totalConcepts === 0) return;
+      conceptTrack.style.transform = `translateX(-${currentConcept * 100}%)`;
+      
+      // Update dots UI
+      conceptDots.forEach((dot, index) => {
+        if (index === currentConcept) {
+          dot.classList.add('bg-white');
+          dot.classList.remove('bg-gray-400/50');
+        } else {
+          dot.classList.remove('bg-white');
+          dot.classList.add('bg-gray-400/50');
+        }
+      });
+    }
+
+    function nextConcept() {
+      if (totalConcepts === 0) return;
+      currentConcept = (currentConcept + 1) % totalConcepts;
+      updateConceptCarousel();
+    }
+
+    function prevConcept() {
+      if (totalConcepts === 0) return;
+      currentConcept = (currentConcept - 1 + totalConcepts) % totalConcepts;
+      updateConceptCarousel();
+    }
+
+    function goToConcept(index) {
+      if (index >= 0 && index < totalConcepts) {
+        currentConcept = index;
+        updateConceptCarousel();
+      }
+    }
+
+    // 每 4 秒自動切換幻燈片
+    if (totalConcepts > 0) {
+      conceptInterval = setInterval(nextConcept, 4000);
+
+      // 當滑鼠移入時暫停，移開時繼續
+      const carouselContainer = document.getElementById('concept-carousel');
+      if (carouselContainer) {
+        carouselContainer.addEventListener('mouseenter', () => clearInterval(conceptInterval));
+        carouselContainer.addEventListener('mouseleave', () => {
+          conceptInterval = setInterval(nextConcept, 4000);
+        });
+      }
+    }
+  </script>
+</body>
+</html>

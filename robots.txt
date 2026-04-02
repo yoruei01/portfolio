@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /img/
+Disallow: /cake.html
+Disallow: /enews.html
+Disallow: /enews_design.html
+Disallow: /glowup.html
+Disallow: /index.html
+Disallow: /ntsc.html
+Disallow: /ptsgo.html
+Disallow: /reels.html
+Disallow: /seminar.html
+Disallow: /spiritedaway.html
